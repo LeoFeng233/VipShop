@@ -1,0 +1,136 @@
+@charset "UTF-8";
+html, body, ul, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, fieldset, legend, table, ol, li, th, td, tr, colgroup, caption {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  vertical-align: middle; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+b, strong {
+  font-weight: normal; }
+
+i, em {
+  font-style: normal; }
+
+textarea {
+  resize: none; }
+
+input, a {
+  outline: none; }
+
+/* 取消点击是的虚线框 */
+table {
+  border-collapse: collapse; }
+
+fieldset, img {
+  border: 0 none; }
+
+body {
+  font: 12px "微软雅黑"; }
+
+.float-l {
+  float: left; }
+
+.float-r {
+  float: right; }
+
+.clearBoth:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+.clearBoth {
+  zoom: 1; }
+
+.borderNo {
+  border: none !important; }
+
+.bgNo {
+  background: none !important; }
+
+/* 固定水平居中垂直居中 */
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto; }
+
+.detail_main {
+  width: 1000px;
+  padding-top: 22px;
+  overflow: hidden;
+  background-color: #ccc;
+  margin-bottom: 40px;
+  margin: 0 auto; }
+  .detail_main .detail_l {
+    float: left;
+    width: 420px;
+    height: 623px;
+    background-color: pink;
+    position: relative;
+    min-height: 623px; }
+    .detail_main .detail_l .min_box, .detail_main .detail_l .max_box {
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      left: 0;
+      top: 0;
+      z-index: 9; }
+      .detail_main .detail_l .min_box img, .detail_main .detail_l .max_box img {
+        width: 420px;
+        height: 420px; }
+      .detail_main .detail_l .min_box span, .detail_main .detail_l .max_box span {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: url("../image/jiling1.png") no-repeat;
+        background-position: -160px -234px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer; }
+    .detail_main .detail_l .max_box {
+      z-index: 1;
+      overflow: hidden;
+      cursor: crosshair; }
+      .detail_main .detail_l .max_box img {
+        pointer-events: none;
+        width: 1100px;
+        height: 1100px; }
+    .detail_main .detail_l .detail_l_Scroll {
+      width: 420px;
+      height: 64px;
+      background-color: tomato;
+      margin-top: 430px;
+      position: relative; }
+      .detail_main .detail_l .detail_l_Scroll .det_pre, .detail_main .detail_l .detail_l_Scroll .det_next {
+        width: 29px;
+        height: 64px;
+        background: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #d8d8d8;
+        font: 16px/64px 'microsoft yahei';
+        text-align: center; }
+      .detail_main .detail_l .detail_l_Scroll .det_next {
+        left: 391px; }
+  .detail_main .detail_r {
+    float: left;
+    width: 550px;
+    height: 634px;
+    background-color: blue;
+    margin-left: 20px; }

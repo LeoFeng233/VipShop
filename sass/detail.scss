@@ -1,0 +1,77 @@
+@import './reset.scss';
+
+.detail_main{
+    width: 1000px;
+    padding-top: 22px;
+    overflow: hidden;
+    background-color: #ccc;
+    margin-bottom: 40px;
+    margin: 0 auto;
+    .detail_l{
+        float: left;
+        width: 420px;
+        height: 623px;
+        background-color: pink;
+        position: relative;
+        min-height: 623px;
+        .min_box{
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            left: 0;top: 0;
+            z-index: 9;
+            img{
+                width: 420px;
+                height: 420px;
+            }
+            span{
+                position: absolute;
+                right: 0;bottom: 0;
+                background: url('../image/jiling1.png') no-repeat;
+                background-position: -160px -234px;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+        }
+        .max_box{
+            @extend .min_box;
+            z-index: 1;
+            overflow: hidden;
+            cursor: crosshair;
+            img{
+                pointer-events: none;
+                width: 1100px;
+                height: 1100px;
+            }
+        }
+        .detail_l_Scroll{
+            width: 420px;
+            height: 64px;
+            background-color: tomato;
+            margin-top: 430px;
+            position: relative;
+            .det_pre{
+                width: 29px;
+                height: 64px;
+                background: rgba(0,0,0,.2);
+                position: absolute;
+                left: 0;top: 0;
+                color: #d8d8d8;
+                font: 16px/64px 'microsoft yahei';
+                text-align: center;
+            }
+            .det_next{
+                @extend .det_pre;
+                left: 391px;
+            }
+        }
+    }
+    .detail_r{
+        float: left;
+        width: 550px;
+        height: 634px;
+        background-color: blue;
+        margin-left: 20px;
+    }
+}

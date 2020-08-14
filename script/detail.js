@@ -44,5 +44,15 @@ $(function(){
         $min_img.prop('src', $(this).prop('src'));
         $max_img.prop('src', $(this).prop('src'));
     })
-    
+
+    // 商品参数
+    $('.detailmsg_content p').click(function(){
+        
+        $('.detail_table_wrap').height()==169?$('.detail_table_wrap').height(421):$('.detail_table_wrap').height(169);
+    })
+
+
+
+
+
 })

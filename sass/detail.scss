@@ -312,7 +312,6 @@
                 height: 30px;
                 padding-top: 10px;
                 margin-bottom: 10px;
-                background-color: pink;
                 i{
                     color: #999999;
                     margin-right: 4px;
@@ -357,4 +356,128 @@
             }
         }
     }
+}
+
+// 商品详细参数
+.detailmsg_wrap{
+    min-width: 1000px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    .detailmsg_content_wrap{
+        width: 1000px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .detailmsg_nav{
+        margin-bottom: 10px;
+        width: 998px;
+        height: 36px;
+        border: 1px solid #ccc;
+        border-bottom: 3px solid #000;
+        line-height: 36px;
+        color: #333333;
+        font-size: 14px;
+        text-align: center;
+        span{
+            float: left;
+            width: 87px;
+            height: 36px;
+            cursor: pointer;
+            border-right: 1px solid #ccc;
+            border-bottom: 3px solid #F10180;
+            border-bottom-color: transparent;
+        }
+        span:last-child{
+            border-right: none;
+        }
+        span:first-child{
+            color: #F10180;
+            border-bottom-color: #F10180;
+        }
+        span:nth-child(n+2):hover{
+            border-bottom-color: #F10180;
+            color: #F10180;
+        }
+    }
+    .detailmsg_para{
+        height: 31px;
+        padding: 0 0 6px 20px;
+        background: url('../image/detailmsg_dian.png') repeat-x left bottom;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;top: 0;
+            width: 20px;
+            height: 30px;
+            background-color: tomato;
+            background: url('../image/jiling1.png') no-repeat;
+            background-position: -272px -226px;
+        }
+        span{
+            font-size: 20px;
+            font-family: 'Microsoft YaHei';
+            color: #F10180;
+        }
+        em{
+            font-size: 20px;
+            color: #999999;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 4px;
+        }
+    }
+    .detailmsg_content{
+        padding: 20px 0 40px;
+        font-size: 14px;   
+        .detail_table_wrap{
+            height: 169px;
+            overflow: hidden;
+        }     
+        th{
+            width: 85px;
+            height: 42px;
+            background-color: #f5f5f5;
+            text-align: right;
+            padding-right: 8px;
+        }
+        td{
+            width: 395px;
+            height: 40px;
+            border: 1px solid #ededed;
+            padding-left: 8px;
+            color: #999999;
+        }
+        p{
+            font: 14px/40px 'microsoft yahei';
+            text-align: center;
+            color: #333333;
+            cursor: pointer;
+            border: 1px solid #ededed;
+            border-top: none;
+        }
+    }
+
+    .detailmsg_imgs_container{
+        text-align: center;
+        margin-bottom: 40px;
+        img{
+            max-width: 100%;
+        }
+    }
+    .word_of_mouth{
+        width: 1000px;
+        margin: 0 auto;
+        background-color: tomato;
+        h4{
+            height: 45px;
+            background-color: #eae8eb;
+            line-height: 45px;
+            font-size: 14px;
+            color: #333333;
+            padding-left: 15px;
+        }
+    }
+
+
+
 }

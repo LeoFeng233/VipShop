@@ -2,16 +2,14 @@
 
 .detail_main{
     width: 1000px;
-    padding-top: 22px;
+    padding: 22px 0 80px 0;
     overflow: hidden;
-    background-color: #ccc;
     margin-bottom: 40px;
     margin: 0 auto;
     .detail_l{
         float: left;
         width: 420px;
         height: 623px;
-        background-color: pink;
         position: relative;
         min-height: 623px;
         .min_box{
@@ -48,7 +46,7 @@
         .detail_l_Scroll{
             width: 420px;
             height: 64px;
-            background-color: tomato;
+            // background-color: tomato;
             margin-top: 430px;
             position: relative;
             .det_pre{
@@ -57,21 +55,306 @@
                 background: rgba(0,0,0,.2);
                 position: absolute;
                 left: 0;top: 0;
-                color: #d8d8d8;
+                color: #999;
                 font: 16px/64px 'microsoft yahei';
                 text-align: center;
+                cursor: not-allowed;
             }
             .det_next{
                 @extend .det_pre;
-                left: 391px;
+                left: 391px;     
+                color: #fff;    
+                cursor: pointer;       
             }
+            .detl_Scr_Wrap{
+                width: 385px;
+                height: 64px;
+                margin-left: 35px;
+                overflow-x: hidden;
+                div{
+                    width: 780px;
+                    height: 64px;
+                    overflow: hidden;
+                    
+                    div{
+                        float: left;
+                        width: 64px;
+                        height: 64px;
+                        margin-right: 7px;
+                        img{
+                            width: 62px;
+                            height: 62px;
+                            border: 1px solid #ccc;
+                            &:hover{
+                                border-color: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .det_l_text{
+            margin-top: 2px;
+            width: 420px;
+            height: 24px;
+            color: #333;
+            font: 12px/22px 'microsoft';
+            padding: 12px 0;
+            border-bottom: 1px dashed #999;
+            span{
+                padding-left: 25px;
+                margin-left: 30px;
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    left: 0;top: 0;
+                    background: url('../image/jiling1.png') no-repeat;
+                    background-position: -187px -169px;
+                }
+            }
+            .det_l_share{
+                float: right;
+                position: relative;
+                div{                    
+                    width: 122px;
+                    height: 30px;
+                    border: 1px solid #ccc;
+                    position: absolute;
+                    left: 0;
+                    top: 22px;
+                    display: none;
+                    cursor: pointer;
+                    background: url('../image/jingling3.png') no-repeat;
+                    background-position: 6px 6px;
+                }
+                &:hover div{
+                    display: block;
+                }
+                &:hover b{
+                    border-bottom-color: transparent;
+                }
+                &:hover i{
+                    border-top-color: transparent;
+                    border-bottom-color: #ccc;
+                    top: 4px;
+                } 
+            }
+            b{
+                float: right;
+                position: relative;
+                width: 75px;
+                height: 22px;
+                border: 1px solid #ccc;
+                text-align: center;
+                padding: 0 9px;
+                cursor: pointer;   
+                z-index: 10;   
+                background-color: #fff;          
+                border-radius: 2px;
+                i{
+                    
+                    border: 3px solid transparent;
+                    border-top-color: #ccc;
+                    position: absolute;
+                    right: 8px;top: 10px;
+                }
+                
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    left: 5px;
+                    top: 2px;
+                    background: url('../image/jiling2.png') no-repeat;
+                    background-position: 2px 2px;
+                }   
+                          
+            }
+        }
+        .img_div{
+            width: 420px;
+            height: 36px;
+            padding: 24px 0;
         }
     }
     .detail_r{
         float: left;
         width: 550px;
         height: 634px;
-        background-color: blue;
-        margin-left: 20px;
+        margin-left: 29px;
+        font-family: 'Microsoft YaHei';
+        font-size: 12px;
+        color: #333333;
+        h3{
+            color: #007cff;
+        } 
+        h2{
+            font-size: 16px;
+            margin: 8px 0;
+        }
+        .det_r_price{
+            height: 98px;
+            padding-bottom: 20px;
+            background-color: #f9f9f9;
+            div{
+                height: 67px;
+                i{
+                    font-size: 20px;
+                }
+                span{
+                    font-size: 48px;
+                }
+                b{
+                    font-size: 16px;
+                    margin: 0 20px;
+                    text-decoration: line-through;
+                    color: #999999;
+                }
+                strong{
+                    font-size: 16px;
+                    color: #999999;
+                }
+            }
+            p{
+                height: 18px;
+                padding-left: 20px;
+                span{
+                    padding: 2px 20px;
+                    background-color: #f3b241;
+                    margin-right: 6px;
+                }
+            }            
+        }
+        .det_r_addr{
+            height: 185px;
+            dl{
+                margin-bottom: 10px;
+                height: 32px;
+                dt{
+                    float: left;
+                    width: 40px;
+                    height: 32px;
+                    line-height: 32px;
+                }
+                dd{
+                    float: left;
+                    width: 205px;
+                    height: 30px;
+                    border: 1px solid #ccc;
+                    padding: 0 35px 0 10px;
+                    line-height: 30px;
+                    position: relative;
+                    cursor: pointer;
+                    span{
+                        position: absolute;
+                        top: 0; right: 0;
+                        width: 35px;
+                        text-align: center;
+                    }
+                }
+                .addr_spe{
+                    border: none;
+                    width: 350px;
+                    height: 32px;
+                    padding: 0;
+                }
+                div{
+                    float: left;
+                    width: 33px;
+                    line-height: 30px;
+                    text-align: center;
+                    height: 30px;
+                    padding: 0 21px;
+                    border: 1px solid #ccc;
+                    position: relative;
+                    span:first-child{
+                        position: absolute;
+                        width: 20px;
+                        top: 0;left: 0;
+                        border-right: 1px solid #ccc;
+                        cursor: pointer;
+                    }
+                    span:last-child{
+                        position: absolute;
+                        width: 20px;
+                        top: 0;right: 0;
+                        border-left: 1px solid #ccc;
+                        cursor: pointer;
+                    }
+                }
+            }
+            h1{
+                margin-top: 34px;
+                height: 46px;
+                span{
+                    float: left;
+                    width: 128px;
+                    padding-left: 70px;
+                    height: 46px;
+                    background-color: #F10180;
+                    color: #fff;
+                    font-size: 18px;
+                    line-height: 46px;
+                    cursor: pointer;
+                    margin-left: 40px;
+                }
+            }
+        }
+        .det_r_service{
+            height: 74px;
+            border-top: 1px dashed #999;
+            margin-top: 185px;
+            p{
+                height: 30px;
+                padding-top: 10px;
+                margin-bottom: 10px;
+                background-color: pink;
+                i{
+                    color: #999999;
+                    margin-right: 4px;
+                }
+                em{
+                    padding-left: 24px;
+                    margin-left: 10px;
+                    color: #F10180;
+                    text-decoration: underline;
+                    background: url('../image/kf.gif') no-repeat;
+                    cursor: pointer;
+                }
+                span{
+                    color: #666666;
+                    padding-left: 24px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                    position: relative;
+                }
+                .yes_ser::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;top: 0;
+                    width: 16px;
+                    height: 16px;
+                    background: url('../image/jiling1.png');
+                    background-position: -627px -190px;
+                    
+                }
+                .no_ser::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;top: 0;
+                    width: 16px;
+                    height: 16px;
+                    background: url('../image/jiling1.png');
+                    background-position: -587px -190px;
+                    
+                }
+                
+                
+            }
+        }
     }
 }

@@ -1,4 +1,5 @@
 $(function(){
+    // 放大镜
     var $minBox = $('.min_box');
     var $maxBox = $('.max_box');
     var $maxImg = $('.max_box img');
@@ -24,4 +25,24 @@ $(function(){
         })
 
     })
+    // 放大镜下的轮播图
+    $det_pre = $('.det_pre');
+    $det_next = $('.det_next');
+    $detl_scroll = $('.detl_Scr_Wrap');
+    $min_img = $('.min_box img');
+    $max_img = $('.max_box img');
+
+    $det_pre.click(function(){
+        $detl_scroll.animate({scrollLeft: 0});
+        $(this).css({'cursor': 'not-allowed','color': '#fff'}).next().css({'cursor': 'pointer','color': '#999'});
+    })
+    $det_next.click(function(){
+        $detl_scroll.animate({scrollLeft: 355});
+        $(this).css({'cursor': 'not-allowed','color': '#fff'}).prev().css({'cursor': 'pointer','color': '#999'});
+    })
+    $detl_scroll.on('mouseenter','img',function(){
+        $min_img.prop('src', $(this).prop('src'));
+        $max_img.prop('src', $(this).prop('src'));
+    })
+    
 })

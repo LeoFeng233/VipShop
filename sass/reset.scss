@@ -1,0 +1,90 @@
+html,
+body,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+form,
+fieldset,
+legend,
+table,
+ol,
+li,
+th,
+td,
+tr,
+colgroup,
+caption {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+b,
+strong {
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+textarea {
+    resize: none;
+}
+
+input,
+a {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+fieldset,
+img {
+    border: 0 none;
+}
+
+body {
+    font: 14px "Microsoft yahei";
+    color: #666;
+    font-size: 12px;
+}
+
+a {
+    color: #666;
+
+    &:hover {
+        color: #f10180;
+    }
+}

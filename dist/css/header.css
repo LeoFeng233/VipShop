@@ -1,0 +1,293 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+@media screen and (min-width: 1441px) {
+  .adapt-open .header-inner {
+    width: 1170px; }
+  .header-logo .search-box {
+    width: 453px; }
+    .header-logo .search-box .search-form {
+      width: 449px; }
+      .header-logo .search-box .search-form input[type=text] {
+        width: 373px; }
+  .main-category {
+    margin-right: 25px; }
+  .goods-nav .header-inner .goods-nav-list li a {
+    padding: 0 15px; } }
+
+.header {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); }
+
+.header-inner {
+  width: 1000px;
+  margin: auto; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #999 transparent transparent transparent;
+  margin-top: 14px;
+  margin-left: 4px;
+  float: right;
+  z-index: 99999999; }
+
+.top-nav {
+  height: 30px;
+  background-color: #f5f5f5;
+  line-height: 30px; }
+  .top-nav .part-left {
+    color: #333;
+    position: relative;
+    float: left;
+    border: 1px solid #f5f5f5;
+    padding-right: 10px;
+    padding-left: 15px;
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer; }
+    .top-nav .part-left .arrow-down {
+      margin-top: 11px;
+      margin-left: 16px; }
+  .top-nav .part-right {
+    float: right;
+    height: 30px; }
+    .top-nav .part-right .login-box {
+      float: left; }
+    .top-nav .part-right .item {
+      float: left;
+      padding-right: 9px;
+      padding-left: 7px; }
+    .top-nav .part-right .sep {
+      width: 16px;
+      height: 16px;
+      background: url(../image/sprites-hash-06206acd.png) no-repeat;
+      background-position: -207px -184px;
+      margin-top: 8px;
+      padding: 0; }
+    .top-nav .part-right .check-in {
+      cursor: pointer; }
+      .top-nav .part-right .check-in .top-nav-icon {
+        float: left;
+        margin: 4px 3px 0 0;
+        width: 15px;
+        height: 18px;
+        background: url(../image/qiandao-gift.gif) no-repeat; }
+    .top-nav .part-right .check-in {
+      position: relative; }
+      .top-nav .part-right .check-in .check-in-info {
+        display: none;
+        width: 460px;
+        height: 51px;
+        position: absolute;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        top: 28px;
+        left: -194px; }
+        .top-nav .part-right .check-in .check-in-info .check-in-gift-msg {
+          color: #666;
+          text-decoration: underline;
+          position: absolute;
+          top: 5px;
+          left: 29px; }
+        .top-nav .part-right .check-in .check-in-info .check-in-btn {
+          display: block;
+          position: absolute;
+          width: 72px;
+          height: 24px;
+          color: #fff;
+          text-align: center;
+          line-height: 24px;
+          background-color: #f10180;
+          top: 9px;
+          right: 29px;
+          border-radius: 3px; }
+    .top-nav .part-right .hover .check-in-info {
+      display: block; }
+    .top-nav .part-right .phone-version a {
+      display: block; }
+    .top-nav .part-right .phone-version .top-nav-icon {
+      float: left;
+      margin: 8px 7px 0 0;
+      width: 10px;
+      height: 14px;
+      background: url(../image/sprites-hash-06206acd.png) no-repeat;
+      background-position: -294px -142px; }
+  .top-nav .login-btn {
+    position: relative; }
+    .top-nav .login-btn a {
+      position: relative;
+      z-index: 123; }
+    .top-nav .login-btn .user-info {
+      position: relative;
+      display: none; }
+      .top-nav .login-btn .user-info .title-box {
+        position: absolute;
+        width: 71px;
+        height: 26px;
+        border: 1px solid #ccc;
+        border-bottom-color: #fff;
+        top: -30px;
+        background-color: #fff;
+        left: -15px;
+        z-index: 113; }
+      .top-nav .login-btn .user-info .info-content {
+        position: absolute;
+        width: 280px;
+        height: 175px;
+        top: -3px;
+        left: -15px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        z-index: 103; }
+  .top-nav .hover .user-info {
+    display: block; }
+
+.header-logo .header-inner {
+  height: 100px; }
+  .header-logo .header-inner .logo {
+    margin-left: -20px;
+    min-width: 160px;
+    overflow: hidden;
+    float: left; }
+    .header-logo .header-inner .logo img {
+      height: 100px; }
+  .header-logo .header-inner .service-list {
+    float: left; }
+    .header-logo .header-inner .service-list .item {
+      margin-right: 1px;
+      float: left;
+      display: block;
+      width: 100px;
+      height: 100px;
+      background: url(../image/sprites-hash-06206acd.png) no-repeat; }
+      .header-logo .header-inner .service-list .item:nth-child(2) {
+        background-position: -100px 0px; }
+      .header-logo .header-inner .service-list .item:nth-child(3) {
+        background-position: -200px 0px; }
+  .header-logo .header-inner .chart-btn {
+    float: right;
+    width: 94px;
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-top: 33px;
+    background-color: #f6f7f9;
+    position: relative; }
+    .header-logo .header-inner .chart-btn:hover {
+      background-color: #fff; }
+    .header-logo .header-inner .chart-btn a {
+      display: block;
+      line-height: 32px;
+      padding-left: 8px;
+      padding-right: 30px; }
+      .header-logo .header-inner .chart-btn a i {
+        width: 12px;
+        height: 17px;
+        float: left;
+        background: url(../image/sprites-hash-06206acd.png);
+        background-position: 0px -208px;
+        margin-top: 8px;
+        margin-right: 5px; }
+    .header-logo .header-inner .chart-btn .chart-goods-num {
+      display: block;
+      height: 16px;
+      line-height: 16px;
+      text-align: center;
+      width: 24px;
+      background-color: #f00581;
+      color: #fff;
+      border-radius: 8px;
+      position: absolute;
+      top: 8px;
+      right: 3px; }
+
+.search-box {
+  width: 391px;
+  float: right;
+  margin-right: 36px; }
+  .search-box .search-form {
+    width: 387px;
+    margin-top: 33px;
+    border: 2px solid #fa2a83;
+    position: relative; }
+    .search-box .search-form input[type=text] {
+      width: 311px;
+      padding: 2px 12px;
+      border: none;
+      outline: none;
+      height: 28px;
+      float: left; }
+    .search-box .search-form a {
+      width: 53px;
+      border: none;
+      outline: none;
+      height: 32px;
+      background-color: #fa2a83;
+      float: right;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      right: 0; }
+      .search-box .search-form a i {
+        background: url(../image/sprites-hash-06206acd.png) no-repeat;
+        width: 19px;
+        height: 22px;
+        background-position: -285px -104px;
+        float: left;
+        margin-left: 18px;
+        margin-top: 6px; }
+
+.search-candidate {
+  margin-top: 1px;
+  height: 20px;
+  line-height: 20px;
+  color: #999;
+  overflow: hidden; }
+  .search-candidate .item {
+    float: left;
+    color: #999; }
+  .search-candidate .sep {
+    margin: 0 11px; }
+
+.goods-nav {
+  height: 43px;
+  font-size: 16px; }
+  .goods-nav a {
+    line-height: 43px;
+    padding: 0 10px;
+    height: 43px;
+    display: block;
+    color: #333; }
+    .goods-nav a:hover {
+      color: #f10180; }
+  .goods-nav .goods-nav-list li {
+    float: left;
+    height: 43px; }
+    .goods-nav .goods-nav-list li .home-page {
+      font-weight: bold;
+      color: #f10180;
+      cursor: default; }
+      .goods-nav .goods-nav-list li .home-page:hover {
+        color: #f10180; }
+
+.main-category {
+  height: 43px;
+  width: 156px;
+  background-color: #f10180;
+  margin-right: 20px; }
+  .main-category a {
+    display: block;
+    color: #fff;
+    padding: 0 15px;
+    line-height: 43px;
+    text-align: center; }
+    .main-category a:hover {
+      color: #fff; }
+    .main-category a img {
+      margin-top: -3px; }

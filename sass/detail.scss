@@ -1,5 +1,10 @@
 @import './reset.scss';
 
+.nav_fixed_top{
+    width: 100%;
+}
+
+// 商品详情页主内容
 .detail_main{
     width: 1000px;
     padding: 22px 0 80px 0;
@@ -385,17 +390,24 @@
             border-right: 1px solid #ccc;
             border-bottom: 3px solid #F10180;
             border-bottom-color: transparent;
+            a{
+                color: #333333;                
+            }
         }
         span:last-child{
             border-right: none;
         }
-        span:first-child{
-            color: #F10180;
+        span:first-child{            
             border-bottom-color: #F10180;
+        }
+        span:first-child a{            
+            color: #F10180;
+        }
+        span:nth-child(n+2):hover a{
+            color: #F10180;
         }
         span:nth-child(n+2):hover{
             border-bottom-color: #F10180;
-            color: #F10180;
         }
     }
     .detailmsg_para{

@@ -1,7 +1,66 @@
 @import './reset.scss';
 
+// 商品固定导航栏（上方，开始隐藏）
 .nav_fixed_top{
     width: 100%;
+    height: 36px;
+    border-top: 1px solid #ccc;
+    border-bottom: 3px solid #000000;
+    position: fixed;
+    background-color: #fff;
+    z-index: 1000;
+    display: none;
+    .nav_fix_wrap{
+        width: 1000px;
+        height: 36px;
+        margin: 0 auto;
+        p{
+            float: left;
+            overflow: hidden;
+            a{
+                float: left;
+                border-left: 1px solid #cccccc;
+                border-bottom: 3px solid transparent;
+                color: #333333;
+                width: 87px;
+                height: 36px;
+                font-size: 14px;
+                line-height: 36px;
+                text-align: center;
+                &:hover{
+                    color: #F10180;
+                    border-bottom-color: #F10180;;
+                }
+                &:first-child{
+                    border-bottom-color: #F10180;
+                    color: #F10180;
+                }
+            }
+        }
+        div{
+            float: right;
+            overflow: hidden;
+            span{
+                float: left;
+                font-size: 26px;
+                color: #F10180;
+                width: 116px;
+                height: 36px;
+            }
+            a{
+                float: left;
+                margin-top: -1px;
+                width: 147px;
+                height: 40px;
+                color: #FFF;
+                padding-left: 30px;
+                font: 18px/40px tahoma;
+                text-align: center;
+                background: #F10180;
+            }
+            
+        }
+    }
 }
 
 // 商品详情页主内容

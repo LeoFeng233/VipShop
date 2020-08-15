@@ -9,7 +9,19 @@
 <body>
     <!-- 商品固定导航栏（上方，开始隐藏） -->
     <div class="nav_fixed_top">
-        
+        <div class="nav_fix_wrap">
+            <p>
+                <a href="#detailmsg">规格参数</a>
+                <a href="#detailmsg_imgs">商品展示</a>
+                <a href="#word_of_mouth">全部口碑</a>
+                <a href="#goods_consult">商品咨询</a>
+                <a href="#about_me">关于我们</a>
+            </p>
+            <div>
+                <span>¥25990</span>
+                <a href="">加入购物车</a>
+            </div>
+        </div>
     </div>
     <!-- 商品详情页主内容 -->
     <div class="detail_main">
@@ -103,10 +115,10 @@
                 <span><a href="#goods_consult">商品咨询</a></span>
                 <span><a href="#about_me">关于我们</a></span>
             </div>
-            <p class="detailmsg_para">
+            <p id="detailmsg" class="detailmsg_para">
                 <span>商品参数</span><em>DETAIL</em>
             </p>
-            <div id="detailmsg" class="detailmsg_content">
+            <div class="detailmsg_content">
                 <div class="detail_table_wrap">
                     <table>
                         <tbody>
@@ -175,10 +187,10 @@
                 </div>
                 <p>查看更多 v</p>
             </div>
-            <p class="detailmsg_para">
+            <p id="detailmsg_imgs" class="detailmsg_para">
                 <span>商品展示</span><em>IMAGE</em>
             </p>
-            <div id="detailmsg_imgs" class="detailmsg_imgs_container">
+            <div class="detailmsg_imgs_container">
                 <img src="../image/detImg01.jpg" alt="">
                 <img src="../image/detImg02.jpg" alt="">
                 <img src="../image/detImg03.jpg" alt="">
@@ -545,10 +557,10 @@
             </div>
             <!-- 商品咨询 -->
             <div class="goods_consult">
-                <div class="goods_consult_tit">
+                <div id="goods_consult" class="goods_consult_tit">
                     商品咨询
                 </div>
-                <div id="goods_consult" class="goods_consult_content">
+                <div class="goods_consult_content">
                     <h1><b>购买前如有问题，请向唯品会咨询。</b><span>联系客服</span></h1>
                     <dl class="goods_consult_item">
                         <dt>是否正品？</dt>
@@ -597,11 +609,11 @@
                 </div>
             </div>
             <!-- 关于我们 -->
-            <div class="about_us">
+            <div id="about_me" class="about_us">
                 <div class="about_us_tit">
                     关于我们
                 </div>
-                <p id="about_me">
+                <p>
                     <span></span>
                     <span></span>
                     <span></span>

@@ -1,4 +1,21 @@
 $(function(){
+    // 商品固定导航栏（上方，开始隐藏）
+    $('.nav_fix_wrap p a').click(function(){
+        $(this).css({'color': '#F10180','border-bottom-color': '#F10180'}).siblings().css({'color': '#333','border-bottom-color': 'transparent'});
+    })
+
+    var $nav_to_top = $('.detailmsg_nav').offset().top;
+    $(window).scroll(function(){
+        var $scroll_top = $(window).scrollTop();
+        if($scroll_top >= $nav_to_top){
+            $('.nav_fixed_top').css({'display': 'block'});
+        }
+        else{
+            $('.nav_fixed_top').css({'display': 'none'});
+        }
+    })
+
+    
     // 放大镜
     var $minBox = $('.min_box');
     var $maxBox = $('.max_box');

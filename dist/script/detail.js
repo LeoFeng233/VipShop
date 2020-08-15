@@ -50,9 +50,66 @@ $(function(){
         
         $('.detail_table_wrap').height()==169?$('.detail_table_wrap').height(421):$('.detail_table_wrap').height(169);
     })
+    // 商品评价
+    $('.detail_r_evaluation div a').click(function(){
+        $(this).css({
+            background: '#F10180',
+            color: '#fff',
+            borderColor: '#F10180'
+        }).siblings().css({
+            background: '#fff',
+            color: '#333333',
+            borderColor: '#ccc'
+        })
+    })
 
+    // 猜你喜欢轮播图
+    var like_index = 0;
+    var like_length = $('.you_lide_imgs ul').length;      
+    $('.like_next').click(function(){
+        like_index++;
+        if(like_index >= like_length){
+            like_index = like_length-1;
+        }
+        $('.you_like_scroll').animate({scrollLeft: like_index*1000});
+        if(like_index===like_length-1){
+            $(this).css('cursor','not-allowed');
+        }
+        $(this).prev().css('cursor', 'pointer');
+        $('.you_like_tit i').eq(2).text(like_index+1);
+    })
+    $('.like_pre').click(function(){
+        like_index--;
+        if(like_index < 0){
+            like_index = 0;
+        }
+        $('.you_like_scroll').animate({scrollLeft: like_index*1000});
+        like_index == 0?$(this).css('cursor','not-allowed'):$(this).css('cursor', 'pointer');
+        $(this).next().css('cursor', 'pointer');
+        $('.you_like_tit i').eq(2).text(like_index+1);
+    })
+    $('.like_tit_pre').click(function(){
+        like_index--;
+        if(like_index < 0){
+            like_index = 0;
+        }
+        $('.you_like_scroll').animate({scrollLeft: like_index*1000});
+        
+        like_index == 0?$('.like_pre').css('cursor','not-allowed'):null;
+        $('.like_next').css('cursor', 'pointer');
+        $('.you_like_tit i').eq(2).text(like_index+1);
+    })
+    $('.like_tit_next').click(function(){
+        like_index++;
+        if(like_index >= like_length){
+            like_index = like_length-1;
+        }
+        $('.you_like_scroll').animate({scrollLeft: like_index*1000});
 
-
+        like_index == like_length - 1?$('.like_next').css('cursor','not-allowed'):null;
+        $('.like_pre').css('cursor', 'pointer');
+        $('.you_like_tit i').eq(2).text(like_index+1);
+    })
 
 
 })

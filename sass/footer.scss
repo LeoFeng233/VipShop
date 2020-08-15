@@ -1,0 +1,113 @@
+.footerWrap{
+    min-width: 960px;
+    height: 496px;
+    border-top: 1px solid #ccc;
+    .footer{//页脚版心区
+        width: 960px;
+        height: 447px;
+        margin: 0 auto;
+        ul{
+            .icon{
+                width: 120px;
+                height: 105px;
+                float: left;
+                background: url('../image/footer01.png') no-repeat;
+            }
+            .pos1{background-position: 10px 30px;}
+            .pos2{background-position: -116px 30px;}
+            .pos3{background-position: -236px 30px;}
+            .pos4{background-position: -360px 30px;}
+            .pos5{background-position: -480px 30px;}
+            .pos6{background-position: -608px 30px;}
+            .pos7{background-position: -730px 30px;}
+            .pos8{background-position: -850px 30px;}
+        }
+        .footer_service{
+            font: 12px/20px tahoma,arial,'Hiragino Sans GB','WenQuanYi Micro';
+            color: #666;
+            width: 960px;
+            height: 146px;
+            margin: 37px 0 25px;
+            dl{
+                width: 145px;
+                height: 146px;
+                padding-left: 16px;
+                float: left;
+                border-right: 1px solid #ccc;
+                dt{
+                    color: #4d4d4d;
+                    margin-bottom: 4px;
+                    cursor: pointer;
+                }
+                dd{
+                    padding-left: 8px;
+                    cursor: pointer;
+                    position: relative;
+                }
+                dd:hover{
+                    color: red;                    
+                }
+                dd::before{
+                    content: '';
+                    display: block;
+                    width: 2px;
+                    height: 2px;
+                    position: absolute;
+                    background-color: #000000;
+                    left: 3px;top: 9px;
+                }
+            }
+            .footer_ma{
+                padding: 0;
+                border: none;
+                text-align: center;
+            }
+        }
+        .footer_aboutus{
+            width: 960px;
+            height: 30px;
+            font-size: 12px;
+            line-height: 30px;
+            color: #fff;
+            text-align: center;
+            background-color: #d7237e;
+            span{
+                cursor: pointer;
+            }
+        }
+        .footer_text{
+            width: 960px;
+            height: 76px;
+            margin: 14px 0;
+            color: #808080;
+            text-align: center;
+            line-height: 19px;
+        }
+        .footer_btm{
+            height: 40px;
+            margin: 4px 0;
+            text-align: center;
+            p{
+                float: left;
+                overflow: hidden;
+                height: 40px;
+                margin-left: 90px;
+                i{
+                    float: left;
+                    width: 105px;
+                    height: 40px;
+                    color: blue;
+                    margin-right: 9px;
+                    background: url('../image/footer_02.png') no-repeat;
+                }
+                .bg2{background-position: 0 -150px;}
+                .bg3{background-position: 0 -50px;}
+                .bg4{background-position: 0 -250px;}
+                .bg5{background-position: 0 -300px;}
+                .bg6{background-position: 0 -400px;}
+                .bg7{background-position: 0 -450px;}
+            }
+            
+        }
+    }
+}

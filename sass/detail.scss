@@ -1,0 +1,889 @@
+@import './reset.scss';
+
+// 商品固定导航栏（上方，开始隐藏）
+.nav_fixed_top{
+    width: 100%;
+    height: 36px;
+    border-top: 1px solid #ccc;
+    border-bottom: 3px solid #000000;
+    position: fixed;
+    background-color: #fff;
+    z-index: 1000;
+    display: none;
+    .nav_fix_wrap{
+        width: 1000px;
+        height: 36px;
+        margin: 0 auto;
+        p{
+            float: left;
+            overflow: hidden;
+            a{
+                float: left;
+                border-left: 1px solid #cccccc;
+                border-bottom: 3px solid transparent;
+                color: #333333;
+                width: 87px;
+                height: 36px;
+                font-size: 14px;
+                line-height: 36px;
+                text-align: center;
+                &:hover{
+                    color: #F10180;
+                    border-bottom-color: #F10180;;
+                }
+                &:first-child{
+                    border-bottom-color: #F10180;
+                    color: #F10180;
+                }
+            }
+        }
+        div{
+            float: right;
+            overflow: hidden;
+            span{
+                float: left;
+                font-size: 26px;
+                color: #F10180;
+                width: 116px;
+                height: 36px;
+            }
+            a{
+                float: left;
+                margin-top: -1px;
+                width: 147px;
+                height: 40px;
+                color: #FFF;
+                padding-left: 30px;
+                font: 18px/40px tahoma;
+                text-align: center;
+                background: #F10180;
+            }
+            
+        }
+    }
+}
+
+// 商品详情页主内容
+.detail_main{
+    width: 1000px;
+    padding: 22px 0 80px 0;
+    overflow: hidden;
+    margin-bottom: 40px;
+    margin: 0 auto;
+    .detail_l{
+        float: left;
+        width: 420px;
+        height: 623px;
+        position: relative;
+        min-height: 623px;
+        .min_box{
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            left: 0;top: 0;
+            z-index: 9;
+            img{
+                width: 420px;
+                height: 420px;
+            }
+            span{
+                position: absolute;
+                right: 0;bottom: 0;
+                background: url('../image/jiling1.png') no-repeat;
+                background-position: -160px -234px;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+        }
+        .max_box{
+            @extend .min_box;
+            z-index: 1;
+            overflow: hidden;
+            cursor: crosshair;
+            img{
+                pointer-events: none;
+                width: 1100px;
+                height: 1100px;
+            }
+        }
+        .detail_l_Scroll{
+            width: 420px;
+            height: 64px;
+            // background-color: tomato;
+            margin-top: 430px;
+            position: relative;
+            .det_pre{
+                width: 29px;
+                height: 64px;
+                background: rgba(0,0,0,.2);
+                position: absolute;
+                left: 0;top: 0;
+                color: #999;
+                font: 16px/64px 'microsoft yahei';
+                text-align: center;
+                cursor: not-allowed;
+            }
+            .det_next{
+                @extend .det_pre;
+                left: 391px;     
+                color: #fff;    
+                cursor: pointer;       
+            }
+            .detl_Scr_Wrap{
+                width: 385px;
+                height: 64px;
+                margin-left: 35px;
+                overflow-x: hidden;
+                div{
+                    width: 780px;
+                    height: 64px;
+                    overflow: hidden;
+                    
+                    div{
+                        float: left;
+                        width: 64px;
+                        height: 64px;
+                        margin-right: 7px;
+                        img{
+                            width: 62px;
+                            height: 62px;
+                            border: 1px solid #ccc;
+                            &:hover{
+                                border-color: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .det_l_text{
+            margin-top: 2px;
+            width: 420px;
+            height: 24px;
+            color: #333;
+            font: 12px/22px 'microsoft';
+            padding: 12px 0;
+            border-bottom: 1px dashed #999;
+            span{
+                padding-left: 25px;
+                margin-left: 30px;
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    left: 0;top: 0;
+                    background: url('../image/jiling1.png') no-repeat;
+                    background-position: -187px -169px;
+                }
+            }
+            .det_l_share{
+                float: right;
+                position: relative;
+                div{                    
+                    width: 122px;
+                    height: 30px;
+                    border: 1px solid #ccc;
+                    position: absolute;
+                    left: 0;
+                    top: 22px;
+                    display: none;
+                    cursor: pointer;
+                    background: url('../image/jingling3.png') no-repeat;
+                    background-position: 6px 6px;
+                }
+                &:hover div{
+                    display: block;
+                }
+                &:hover b{
+                    border-bottom-color: transparent;
+                }
+                &:hover i{
+                    border-top-color: transparent;
+                    border-bottom-color: #ccc;
+                    top: 4px;
+                } 
+            }
+            b{
+                float: right;
+                position: relative;
+                width: 75px;
+                height: 22px;
+                border: 1px solid #ccc;
+                text-align: center;
+                padding: 0 9px;
+                cursor: pointer;   
+                z-index: 10;   
+                background-color: #fff;          
+                border-radius: 2px;
+                i{
+                    
+                    border: 3px solid transparent;
+                    border-top-color: #ccc;
+                    position: absolute;
+                    right: 8px;top: 10px;
+                }
+                
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    left: 5px;
+                    top: 2px;
+                    background: url('../image/jiling2.png') no-repeat;
+                    background-position: 2px 2px;
+                }   
+                          
+            }
+        }
+        .img_div{
+            width: 420px;
+            height: 36px;
+            padding: 24px 0;
+        }
+    }
+    .detail_r{
+        float: left;
+        width: 550px;
+        height: 634px;
+        margin-left: 29px;
+        font-family: 'Microsoft YaHei';
+        font-size: 12px;
+        color: #333333;
+        h3{
+            color: #007cff;
+        } 
+        h2{
+            font-size: 16px;
+            margin: 8px 0;
+        }
+        .det_r_price{
+            height: 98px;
+            padding-bottom: 20px;
+            background-color: #f9f9f9;
+            div{
+                height: 67px;
+                i{
+                    font-size: 20px;
+                }
+                span{
+                    font-size: 48px;
+                }
+                b{
+                    font-size: 16px;
+                    margin: 0 20px;
+                    text-decoration: line-through;
+                    color: #999999;
+                }
+                strong{
+                    font-size: 16px;
+                    color: #999999;
+                }
+            }
+            p{
+                height: 18px;
+                padding-left: 20px;
+                span{
+                    padding: 2px 20px;
+                    background-color: #f3b241;
+                    margin-right: 6px;
+                }
+            }            
+        }
+        .det_r_addr{
+            height: 185px;
+            dl{
+                margin-bottom: 10px;
+                height: 32px;
+                dt{
+                    float: left;
+                    width: 40px;
+                    height: 32px;
+                    line-height: 32px;
+                }
+                dd{
+                    float: left;
+                    width: 205px;
+                    height: 30px;
+                    border: 1px solid #ccc;
+                    padding: 0 35px 0 10px;
+                    line-height: 30px;
+                    position: relative;
+                    cursor: pointer;
+                    span{
+                        position: absolute;
+                        top: 0; right: 0;
+                        width: 35px;
+                        text-align: center;
+                    }
+                }
+                .addr_spe{
+                    border: none;
+                    width: 350px;
+                    height: 32px;
+                    padding: 0;
+                }
+                div{
+                    float: left;
+                    width: 33px;
+                    line-height: 30px;
+                    text-align: center;
+                    height: 30px;
+                    padding: 0 21px;
+                    border: 1px solid #ccc;
+                    position: relative;
+                    span:first-child{
+                        position: absolute;
+                        width: 20px;
+                        top: 0;left: 0;
+                        border-right: 1px solid #ccc;
+                        cursor: pointer;
+                    }
+                    span:last-child{
+                        position: absolute;
+                        width: 20px;
+                        top: 0;right: 0;
+                        border-left: 1px solid #ccc;
+                        cursor: pointer;
+                    }
+                }
+            }
+            h1{
+                margin-top: 34px;
+                height: 46px;
+                span{
+                    float: left;
+                    width: 128px;
+                    padding-left: 70px;
+                    height: 46px;
+                    background-color: #F10180;
+                    color: #fff;
+                    font-size: 18px;
+                    line-height: 46px;
+                    cursor: pointer;
+                    margin-left: 40px;
+                }
+            }
+        }
+        .det_r_service{
+            height: 74px;
+            border-top: 1px dashed #999;
+            margin-top: 185px;
+            p{
+                height: 30px;
+                padding-top: 10px;
+                margin-bottom: 10px;
+                i{
+                    color: #999999;
+                    margin-right: 4px;
+                }
+                em{
+                    padding-left: 24px;
+                    margin-left: 10px;
+                    color: #F10180;
+                    text-decoration: underline;
+                    background: url('../image/kf.gif') no-repeat;
+                    cursor: pointer;
+                }
+                span{
+                    color: #666666;
+                    padding-left: 24px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                    position: relative;
+                }
+                .yes_ser::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;top: 0;
+                    width: 16px;
+                    height: 16px;
+                    background: url('../image/jiling1.png');
+                    background-position: -627px -190px;
+                    
+                }
+                .no_ser::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;top: 0;
+                    width: 16px;
+                    height: 16px;
+                    background: url('../image/jiling1.png');
+                    background-position: -587px -190px;
+                    
+                }
+                
+                
+            }
+        }
+    }
+}
+
+// 商品详细参数
+.detailmsg_wrap{
+    min-width: 1000px;
+    overflow: hidden;
+    .detailmsg_content_wrap{
+        width: 1000px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .detailmsg_nav{
+        margin-bottom: 10px;
+        width: 998px;
+        height: 36px;
+        border: 1px solid #ccc;
+        border-bottom: 3px solid #000;
+        line-height: 36px;
+        color: #333333;
+        font-size: 14px;
+        text-align: center;
+        span{
+            float: left;
+            width: 87px;
+            height: 36px;
+            cursor: pointer;
+            border-right: 1px solid #ccc;
+            border-bottom: 3px solid #F10180;
+            border-bottom-color: transparent;
+            a{
+                color: #333333;                
+            }
+        }
+        span:last-child{
+            border-right: none;
+        }
+        span:first-child{            
+            border-bottom-color: #F10180;
+        }
+        span:first-child a{            
+            color: #F10180;
+        }
+        span:nth-child(n+2):hover a{
+            color: #F10180;
+        }
+        span:nth-child(n+2):hover{
+            border-bottom-color: #F10180;
+        }
+    }
+    .detailmsg_para{
+        height: 31px;
+        padding: 0 0 6px 20px;
+        background: url('../image/detailmsg_dian.png') repeat-x left bottom;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;top: 0;
+            width: 20px;
+            height: 30px;
+            background-color: tomato;
+            background: url('../image/jiling1.png') no-repeat;
+            background-position: -272px -226px;
+        }
+        span{
+            font-size: 20px;
+            font-family: 'Microsoft YaHei';
+            color: #F10180;
+        }
+        em{
+            font-size: 20px;
+            color: #999999;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 4px;
+        }
+    }
+    .detailmsg_content{
+        padding: 20px 0 40px;
+        font-size: 14px;   
+        .detail_table_wrap{
+            height: 169px;
+            overflow: hidden;
+        }     
+        th{
+            width: 85px;
+            height: 42px;
+            background-color: #f5f5f5;
+            text-align: right;
+            padding-right: 8px;
+        }
+        td{
+            width: 395px;
+            height: 40px;
+            border: 1px solid #ededed;
+            padding-left: 8px;
+            color: #999999;
+        }
+        p{
+            font: 14px/40px 'microsoft yahei';
+            text-align: center;
+            color: #333333;
+            cursor: pointer;
+            border: 1px solid #ededed;
+            border-top: none;
+        }
+    }
+
+    .detailmsg_imgs_container{
+        text-align: center;
+        margin-bottom: 40px;
+        img{
+            max-width: 100%;
+        }
+    }
+    .word_of_mouth{
+        width: 1000px;
+        margin: 0 auto;
+        background-color: tomato;
+        h4{
+            height: 45px;
+            background-color: #eae8eb;
+            line-height: 45px;
+            font-size: 14px;
+            color: #333333;
+            padding-left: 15px;
+        }
+    }
+
+    .detail_r_evaluation{
+        padding: 30px 0;        
+        background-color: #fafafa;
+        border: 1px solid #ccc;
+        border-bottom: none;
+        div{
+            height: 80px;
+            margin-left: 60px;
+            overflow: hidden;
+            a{
+                font-size: 12px;
+                font-family: 'microsoft yahei';
+                padding: 7px 12px 5px;
+                margin: 0 10px 10px 0;
+                float: left;
+                cursor: pointer;
+                color: #333333;
+                border: 1px solid #ccc;
+                border-radius: 4px;                
+                &:first-child{
+                    color: #fff;
+                    background-color: #F10180;
+                    border-color: #F10180;
+                }
+                &:hover{
+                    border-color: #F10180;
+                }
+            }
+        }
+    }
+    .detail_r_eval_item{
+        border-top: 1px solid #ccc;
+        padding: 30px 0;
+        overflow: hidden;
+        .eval_l{
+            float: left;
+            width: 235px;
+            height: 40px;
+            color: #333333;
+            overflow: hidden;
+            img{
+                float: left;
+                width: 40px;
+                height: 40px;
+            }
+            div{
+                float: left;
+                padding-left: 10px;
+                h6{
+                    padding-left: 20px;
+                    margin-top: 5px;                    
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 18px;
+                        height: 18px;
+                        top: 0;left: 0;
+                        background: url('../image/jiling1.png') no-repeat;
+                        background-position: -521px -190px;
+                    }
+                }
+            }
+        }
+        .eval_r{
+            float: left;
+            color: #666666;
+            p{
+                margin-bottom: 15px;
+            }
+            img{
+                width: 72px;
+                height: 72px;
+                border: 1px solid #ccc;
+                padding: 3px;
+                margin-bottom: 15px;
+                &:hover{
+                    border: 2px solid #F10180;
+                    padding: 2px;
+                }
+            }
+            h4{
+                color: #ccc;
+            }
+        }
+    }
+    .detail_eval_page{
+        height: 32px;
+        margin: 30px 0;
+        padding-left: 40%;
+        span{
+            float: left;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #666666;
+            line-height: 30px;
+            text-align: center;
+            color: #d1d1d1;
+            margin: 0 4px;
+            border-radius: 4px;
+            &:nth-child(2){
+                color: #fff;
+                background-color: #F10180;
+                border-color: #F10180;
+            }
+        }
+        b{
+            width: 32px;
+            height: 32px;
+            color: #424141;
+            line-height: 32px;
+            text-align: center;
+            margin-left: 15px;
+        }
+    }
+    // 猜你喜欢
+    .guess_you_like{
+        margin-top: 100px;
+        .you_like_tit{
+            height: 46px;
+            margin-bottom: 20px;
+            background-color: #eae8eb;
+            padding: 0 10px 0 15px;
+            font: 14px/46px 'microsoft yahei';
+            strong{
+                font-size: 12px;
+                margin-left: 5px;
+                color: #999999;
+            }
+            span{
+                float: right;
+                width: 30px;
+                font-size: 20px;
+                color: #666666;
+                height: 46px;
+                text-align: center;
+                cursor: pointer;
+            }
+            i{
+                float: right;
+                font-size: 12px;
+                color: #666666;
+                padding: 0 2px;
+            }
+        }
+        // 猜你喜欢轮播图
+        .you_like_scroll_wrap{
+            padding-bottom: 50px;
+            margin-bottom: 20px;
+            position: relative; 
+            &:hover .like_pre{
+                left: 0;
+            }         
+            &:hover .like_next{
+                right: 0;
+            }         
+            .like_pre{
+                position: absolute;
+                width: 32px;
+                height: 54px;
+                color: #fff;
+                background-color: #000;
+                opacity: .3;
+                font: 16px/54px 'microsoft yahei';
+                text-align: center;
+                border-radius: 0 4px 4px 0;
+                left: -32px;top: 50%;
+                margin-top: -27px;
+                cursor: not-allowed;
+                transition: all 0.5s;
+            }
+            .like_next{
+                position: absolute;
+                width: 32px;
+                height: 54px;
+                color: #fff;
+                background-color: #000;
+                opacity: .3;
+                font: 16px/54px 'microsoft yahei';
+                text-align: center;
+                border-radius: 4px 0 0 4px;
+                right: -32px;top: 50%;
+                margin-top: -27px;
+                cursor: pointer; 
+                transition: all 0.5s;                              
+            }
+            p:hover{
+                opacity: .6;
+            }
+            .you_like_scroll{
+                width: 1000px;
+                overflow-x: hidden;
+                .you_lide_imgs{
+                    width: 5000px;
+                    ul{
+                        float: left;
+                        width: 1000px;
+                        li{
+                            float: left;
+                            width: 200px;
+                            img{
+                                width: 200px;
+                            }
+                            p{
+                                color: #666666;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                font-family: sans-serif;
+                                line-height: 18px;
+                                padding: 0 8px;
+                            }
+                            div{
+                                padding-left: 10px;
+                                span{
+                                    font-size: 14px;
+                                    color: #F10180;
+                                }
+                                del{
+                                    color: #999999;
+                                    margin-left: 6px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 商品咨询
+    .goods_consult{
+        .goods_consult_tit{
+            height: 46px;
+            margin-bottom: 30px;
+            background-color: #eae8eb;
+            padding: 0 10px 0 15px;
+            font: 14px/46px 'microsoft yahei';
+        }
+        .goods_consult_content{
+            font-size: 14px;
+            color: #333333;
+            padding: 0 20px 35px;
+            h1{
+                overflow: hidden;
+                b{
+                    float: left;
+                    height: 30px;
+                    font-size: 14px;
+                    line-height: 30px;
+                    font-weight: bold;
+                }
+                span{
+                    float: left;
+                    height: 30px;
+                    width: 60px;
+                    line-height: 30px;
+                    padding-left: 40px;
+                    font-size: 12px;
+                    color: #fb4892;
+                    background: url('../image/jiling1.png') no-repeat;
+                    background-position: -152px -259px;
+                }                
+            }
+            .goods_consult_item{
+                padding: 10px 0;
+                dt{
+                    font-weight: bold;
+                    padding-left: 25px;
+                    position: relative;
+                    margin-bottom: 6px;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;top: 4px;
+                        width: 14px;
+                        height: 14px;
+                        background: url('../image/jiling1.png') no-repeat;
+                        background-position: -247px -170px;
+                    }
+                }
+                dd{
+                    padding-left: 25px;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;top: 4px;
+                        width: 14px;
+                        height: 14px;
+                        background: url('../image/jiling1.png') no-repeat;
+                        background-position: -265px -170px;
+                    }
+                }
+            }
+        }
+    }
+    .about_us{
+        padding-bottom: 60px;
+        .about_us_tit{
+            height: 46px;
+            margin-bottom: 30px;
+            background-color: #eae8eb;
+            padding: 0 10px 0 15px;
+            font: 14px/46px 'microsoft yahei';
+        }
+        p{
+            overflow: hidden;
+            padding-left: 157px;
+            span{
+                float: left;
+                width: 58px;
+                height: 90px;
+                margin: 0 20px;
+                background: url('../image/jingling4.png') no-repeat;
+                &:nth-child(1){background-position: 0px -120px;}
+                &:nth-child(2){background-position: -58px 0;}
+                &:nth-child(3){background-position: -120px 0;}
+                &:nth-child(4){background-position: -180px 0;}
+                &:nth-child(5){background-position: -240px 0;}
+                &:nth-child(6){background-position: -300px 0;}
+                &:nth-child(7){background-position: -360px 0;}                
+                &:hover{
+                    background-position-y: -120px;
+                }
+            }
+        }
+        h1{
+            height: 71px;
+            background: url('../image/jingling4.png') no-repeat;
+            background-position: 0 -240px;
+        }
+        img{
+            max-width: 1000px;
+            
+        }
+    }
+}
+@import './footer';

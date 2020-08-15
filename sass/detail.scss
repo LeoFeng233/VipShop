@@ -362,7 +362,6 @@
 .detailmsg_wrap{
     min-width: 1000px;
     overflow: hidden;
-    margin-bottom: 10px;
     .detailmsg_content_wrap{
         width: 1000px;
         margin: 0 auto;
@@ -595,7 +594,7 @@
     }
     // 猜你喜欢
     .guess_you_like{
-        margin: 100px 0 20px;
+        margin-top: 100px;
         .you_like_tit{
             height: 46px;
             margin-bottom: 20px;
@@ -625,7 +624,8 @@
         }
         // 猜你喜欢轮播图
         .you_like_scroll_wrap{
-            min-height: 574px;
+            padding-bottom: 50px;
+            margin-bottom: 20px;
             position: relative; 
             &:hover .like_pre{
                 left: 0;
@@ -668,7 +668,7 @@
             }
             .you_like_scroll{
                 width: 1000px;
-                overflow-x: scroll;
+                overflow-x: hidden;
                 .you_lide_imgs{
                     width: 5000px;
                     ul{
@@ -707,5 +707,112 @@
             }
         }
     }
-
+    // 商品咨询
+    .goods_consult{
+        .goods_consult_tit{
+            height: 46px;
+            margin-bottom: 30px;
+            background-color: #eae8eb;
+            padding: 0 10px 0 15px;
+            font: 14px/46px 'microsoft yahei';
+        }
+        .goods_consult_content{
+            font-size: 14px;
+            color: #333333;
+            padding: 0 20px 35px;
+            h1{
+                overflow: hidden;
+                b{
+                    float: left;
+                    height: 30px;
+                    font-size: 14px;
+                    line-height: 30px;
+                    font-weight: bold;
+                }
+                span{
+                    float: left;
+                    height: 30px;
+                    width: 60px;
+                    line-height: 30px;
+                    padding-left: 40px;
+                    font-size: 12px;
+                    color: #fb4892;
+                    background: url('../image/jiling1.png') no-repeat;
+                    background-position: -152px -259px;
+                }                
+            }
+            .goods_consult_item{
+                padding: 10px 0;
+                dt{
+                    font-weight: bold;
+                    padding-left: 25px;
+                    position: relative;
+                    margin-bottom: 6px;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;top: 4px;
+                        width: 14px;
+                        height: 14px;
+                        background: url('../image/jiling1.png') no-repeat;
+                        background-position: -247px -170px;
+                    }
+                }
+                dd{
+                    padding-left: 25px;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;top: 4px;
+                        width: 14px;
+                        height: 14px;
+                        background: url('../image/jiling1.png') no-repeat;
+                        background-position: -265px -170px;
+                    }
+                }
+            }
+        }
+    }
+    .about_us{
+        padding-bottom: 60px;
+        .about_us_tit{
+            height: 46px;
+            margin-bottom: 30px;
+            background-color: #eae8eb;
+            padding: 0 10px 0 15px;
+            font: 14px/46px 'microsoft yahei';
+        }
+        p{
+            overflow: hidden;
+            padding-left: 157px;
+            span{
+                float: left;
+                width: 58px;
+                height: 90px;
+                margin: 0 20px;
+                background: url('../image/jingling4.png') no-repeat;
+                &:nth-child(1){background-position: 0px -120px;}
+                &:nth-child(2){background-position: -58px 0;}
+                &:nth-child(3){background-position: -120px 0;}
+                &:nth-child(4){background-position: -180px 0;}
+                &:nth-child(5){background-position: -240px 0;}
+                &:nth-child(6){background-position: -300px 0;}
+                &:nth-child(7){background-position: -360px 0;}                
+                &:hover{
+                    background-position-y: -120px;
+                }
+            }
+        }
+        h1{
+            height: 71px;
+            background: url('../image/jingling4.png') no-repeat;
+            background-position: 0 -240px;
+        }
+        img{
+            max-width: 1000px;
+            
+        }
+    }
 }
+@import './footer';

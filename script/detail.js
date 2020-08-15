@@ -110,6 +110,10 @@ $(function(){
         $('.like_pre').css('cursor', 'pointer');
         $('.you_like_tit i').eq(2).text(like_index+1);
     })
-
+    // 关于我们
+    $('.about_us p span').click(function(){
+        $(this).css({'background-position-y': '-120px'}).siblings().css({'background-position-y': 0});
+        $(this).parent().next().css({'background-position-y': -(($(this).index()+1)*80 + 160) + 'px'});
+    })
 
 })

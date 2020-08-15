@@ -46,12 +46,19 @@ task('html', async () => {
     .pipe(load.connect.reload())
 })
 
+task('lib', async () => {
+  src(['./lib/**/*.js', './lib/**/*.css'])
+    .pipe(dest('./dist/lib'))
+    .pipe(load.connect.reload());
+})
+
 // 监听文件变化
 task('watch', async () => {
   watch('./image/*.*', series('image'));
   watch('./sass/*.scss', series('sass'));
-  watch('./script/*.js', series('script'));
+  watch('./script/**/*.js', series('script'));
   watch('./pages/*.html', series('html'));
+  watch(['./lib/**/*.js', './lib/**/*.css'], series('lib'));
 })
 
 // 启动服务，自动刷新
@@ -64,4 +71,4 @@ task('connect', async () => {
 })
 
 // 构建开发包
-task('dev', series('delDist', 'image', 'sass', 'script', 'html', 'connect', 'watch'))
+task('dev', series('delDist', 'image', 'sass', 'script', 'html', 'lib', 'connect', 'watch'))

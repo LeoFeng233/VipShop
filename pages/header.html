@@ -7,6 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/content.css">
+    <link rel="stylesheet" href="../lib/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
 </head>
 
 <body>
@@ -130,11 +133,106 @@
                             <i class="vipFont"></i>
                         </a></li>
                 </ul>
+
+                <div class="nav-cate-down">
+                    <ul></ul>
+                </div>
             </div>
         </div>
     </div>
 
+    <div class="content">
+        <div class="banner-box">
+            <div class="banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="../image/banner1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="../image/banner2.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="banner-pagination">
+                <ul>
+                    <li>欧莱雅集团VIP大牌日 低至14元</li>
+                    <li>潮宏基VIP大牌日 折上8折起</li>
+                </ul>
+                <div class="selected-underline">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="mid-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="#" class="my-account">
+                        <i class="nav-icon">&#xe610;
+                            <i class="sidebar-name">账号</i>
+                        </i>
+
+                    </a>
+                </li>
+                <li class="my-shop-package clearfix">
+                    <a href="#">
+                        <i class="nav-icon">&#xe65a;</i>
+                        <p>购物袋</p>
+                        <span class="package-goods-num">0</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="my-service">
+                        <i class="nav-icon">&#xe692;</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="my-service">
+                        <i class="nav-icon">&#xe635;</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="my-service">
+                        <i class="nav-icon">&#xe60f;</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="my-service">
+                        <i class="nav-icon">&#xe63b;</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bottom-nav">
+            <a href="#" class="my-service">
+                <i class="nav-icon">&#xe602;</i>
+            </a>
+            <a href="#" class="my-service">
+                <i class="nav-icon">&#xe646;</i>
+            </a>
+        </div>
+    </div>
+
     <script type="module" src="../script/header.js"></script>
+    <script src="../lib/js/swiper-bundle.min.js"></script>
+    <script src="../script/content/swiperBanner.js"></script>
+    <script type="module" src="../script/content/bannerPagination.js"></script>
 </body>
 
 </html>

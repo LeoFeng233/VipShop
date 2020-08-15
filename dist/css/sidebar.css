@@ -1,0 +1,82 @@
+.sidebar {
+  height: 100%;
+  width: 36px;
+  background-color: #262626;
+  position: fixed;
+  top: 0;
+  right: 0; }
+  .sidebar a {
+    color: #fff; }
+  .sidebar .mid-nav {
+    position: absolute;
+    height: 400px;
+    width: 36px;
+    top: 50%;
+    margin-top: -300px;
+    right: 0; }
+    .sidebar .mid-nav li {
+      margin-bottom: 8px; }
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 2007606 */
+  src: url("//at.alicdn.com/t/font_2007606_oz4orky4ap.eot");
+  src: url("//at.alicdn.com/t/font_2007606_oz4orky4ap.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_2007606_oz4orky4ap.woff2") format("woff2"), url("//at.alicdn.com/t/font_2007606_oz4orky4ap.woff") format("woff"), url("//at.alicdn.com/t/font_2007606_oz4orky4ap.ttf") format("truetype"), url("//at.alicdn.com/t/font_2007606_oz4orky4ap.svg#iconfont") format("svg"); }
+
+.nav-icon {
+  font-family: iconfont;
+  font-size: 26px;
+  display: block;
+  width: 36px;
+  line-height: 18px;
+  text-align: center; }
+
+.sidebar-name {
+  font-size: 12px; }
+
+.my-account {
+  padding: 8px 0 6px 0;
+  display: block; }
+  .my-account:hover {
+    background-color: #df147f; }
+
+.my-shop-package {
+  background-color: #df147f; }
+  .my-shop-package a {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 8px; }
+    .my-shop-package a .nav-icon {
+      height: 36px;
+      line-height: 36px; }
+    .my-shop-package a p {
+      font-size: 14px;
+      max-width: 14px;
+      margin-left: 11px; }
+    .my-shop-package a .package-goods-num {
+      display: block;
+      width: 20px;
+      height: 20px;
+      color: #df147f;
+      background-color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 20px;
+      margin: 10px 8px; }
+
+.my-service {
+  height: 36px;
+  display: block; }
+  .my-service:hover {
+    background-color: #df147f; }
+  .my-service .nav-icon {
+    height: 36px;
+    line-height: 36px;
+    font-size: 24px; }
+
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+  .bottom-nav a {
+    margin-bottom: 8px; }

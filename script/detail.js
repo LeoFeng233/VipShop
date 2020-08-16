@@ -133,4 +133,33 @@ $(function(){
         $(this).parent().next().css({'background-position-y': -(($(this).index()+1)*80 + 160) + 'px'});
     })
 
+    // 商品左侧热销商品
+    var g_good_index = 0;
+    $('.g_goods_next').click(function(){
+        g_good_index++;
+        if(g_good_index >=2){
+            g_good_index = 2;
+            $(this).css({'background': '#ccc'})
+        }
+        $(this).siblings().css({'background': '#fff'});
+        $('.goods_scroll').animate({scrollTop: g_good_index*1000});
+    })
+    $('.g_goods_pre').click(function(){
+        g_good_index--;
+        if(g_good_index < 0){
+            g_good_index = 0;            
+        }
+        if(g_good_index === 0){
+            $(this).css({'background': '#ccc'})
+        }
+        $(this).siblings().css({'background': '#fff'});
+        $('.goods_scroll').animate({scrollTop: g_good_index*1000});
+    })
+    $(window).resize(function(){
+        if($('.detailmsg_content_wrap').offset().left <= 200){
+            $('.detail_good_goods').css({'display': 'none'});
+        }else{
+            $('.detail_good_goods').css({'display': 'block'});
+        }
+    })
 })

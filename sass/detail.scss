@@ -426,6 +426,126 @@
 .detailmsg_wrap{
     min-width: 1000px;
     overflow: hidden;
+    position: relative;
+    // 左侧热销好货
+    .detail_good_goods{
+        position: absolute;
+        left: 10px;top: 0;
+        width: 180px;        
+        height: 1093px;
+        .detail_brand{
+            width: 158px;
+            height: 110px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            p{
+                float: left;
+                width: 63px;
+                height: 63px;
+                border: 1px solid #ccc;
+                img{
+                    width: 63px;
+                    height: 63px;
+                }
+            }
+            div{
+                float: left;
+                padding-left: 6px;
+                height: 64px;
+                margin-bottom: 12px;
+                h2{
+                    font-size: 14px;
+                    color: #333333;
+                    font-weight: bold;
+                }
+                p{
+                    height: 35px;
+                    border: none;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    margin-top: 8px;
+                    color: #666;
+                }
+            }
+            h1{
+                height: 32px;
+                font-size: 14px;
+                border: 1px solid #ffbee0;
+                border-radius: 4px;
+                line-height: 32px;
+                text-align: center;
+                clear: both;
+                background-color: #fcedf2;
+            }
+        }
+        .good_goods_scroll{
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            position: relative;
+            height: 1093px;
+            h1{
+                font-size: 14px;
+                color: #333333;
+                height: 42px;
+                line-height: 42px;
+                background-color: #f5f5f5;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            h4{               
+                height: 24px;
+                padding-top: 6px;
+                color: #333333;
+                text-align: center;
+                line-height: 16px;
+                font-size: 20px;
+                span{
+                    float: left;
+                    height: 16px;
+                    width: 16px;
+                    border: 1px solid #000;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    &:first-child{
+                        background-color: #ccc;
+                        margin: 0 20px 0 60px;
+                    }
+                }
+            }
+            .goods_scroll{
+                height: 1000px;
+                overflow-y: hidden;
+                .goods_content{
+                    height: 5000px;
+                    div{
+                        overflow: hidden;
+                        height: 250px;
+                        img{
+                            width: 156px;
+                            height: 197px;
+                            margin-left: 10px;
+                        }
+                        p{
+                            color: #999999;
+                            margin: 0 0 5px 10px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                        h3{
+                            font-size: 18px;
+                            color: #F10180;
+                            margin-left: 10px;
+                            line-height: 27px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+
     .detailmsg_content_wrap{
         width: 1000px;
         margin: 0 auto;

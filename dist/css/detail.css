@@ -424,7 +424,105 @@ body {
 
 .detailmsg_wrap {
   min-width: 1000px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
+  .detailmsg_wrap .detail_good_goods {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 180px;
+    height: 1093px; }
+    .detailmsg_wrap .detail_good_goods .detail_brand {
+      width: 158px;
+      height: 110px;
+      padding: 10px;
+      border: 1px solid #ccc; }
+      .detailmsg_wrap .detail_good_goods .detail_brand p {
+        float: left;
+        width: 63px;
+        height: 63px;
+        border: 1px solid #ccc; }
+        .detailmsg_wrap .detail_good_goods .detail_brand p img {
+          width: 63px;
+          height: 63px; }
+      .detailmsg_wrap .detail_good_goods .detail_brand div {
+        float: left;
+        padding-left: 6px;
+        height: 64px;
+        margin-bottom: 12px; }
+        .detailmsg_wrap .detail_good_goods .detail_brand div h2 {
+          font-size: 14px;
+          color: #333333;
+          font-weight: bold; }
+        .detailmsg_wrap .detail_good_goods .detail_brand div p {
+          height: 35px;
+          border: none;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin-top: 8px;
+          color: #666; }
+      .detailmsg_wrap .detail_good_goods .detail_brand h1 {
+        height: 32px;
+        font-size: 14px;
+        border: 1px solid #ffbee0;
+        border-radius: 4px;
+        line-height: 32px;
+        text-align: center;
+        clear: both;
+        background-color: #fcedf2; }
+    .detailmsg_wrap .detail_good_goods .good_goods_scroll {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      position: relative;
+      height: 1093px; }
+      .detailmsg_wrap .detail_good_goods .good_goods_scroll h1 {
+        font-size: 14px;
+        color: #333333;
+        height: 42px;
+        line-height: 42px;
+        background-color: #f5f5f5;
+        text-align: center;
+        margin-bottom: 10px; }
+      .detailmsg_wrap .detail_good_goods .good_goods_scroll h4 {
+        height: 24px;
+        padding-top: 6px;
+        color: #333333;
+        text-align: center;
+        line-height: 16px;
+        font-size: 20px; }
+        .detailmsg_wrap .detail_good_goods .good_goods_scroll h4 span {
+          float: left;
+          height: 16px;
+          width: 16px;
+          border: 1px solid #000;
+          border-radius: 50%;
+          cursor: pointer; }
+          .detailmsg_wrap .detail_good_goods .good_goods_scroll h4 span:first-child {
+            background-color: #ccc;
+            margin: 0 20px 0 60px; }
+      .detailmsg_wrap .detail_good_goods .good_goods_scroll .goods_scroll {
+        height: 1000px;
+        overflow-y: hidden; }
+        .detailmsg_wrap .detail_good_goods .good_goods_scroll .goods_scroll .goods_content {
+          height: 5000px; }
+          .detailmsg_wrap .detail_good_goods .good_goods_scroll .goods_scroll .goods_content div {
+            overflow: hidden;
+            height: 250px; }
+            .detailmsg_wrap .detail_good_goods .good_goods_scroll .goods_scroll .goods_content div img {
+              width: 156px;
+              height: 197px;
+              margin-left: 10px; }
+            .detailmsg_wrap .detail_good_goods .good_goods_scroll .goods_scroll .goods_content div p {
+              color: #999999;
+              margin: 0 0 5px 10px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap; }
+            .detailmsg_wrap .detail_good_goods .good_goods_scroll .goods_scroll .goods_content div h3 {
+              font-size: 18px;
+              color: #F10180;
+              margin-left: 10px;
+              line-height: 27px; }
   .detailmsg_wrap .detailmsg_content_wrap {
     width: 1000px;
     margin: 0 auto;

@@ -1,5 +1,5 @@
 @media screen and (min-width: 1441px) {
-  div.content {
+  div.content-banner {
     background: url(../image/content-bg.jpg) no-repeat center top; }
   .banner-box .banner {
     width: 1146px; }
@@ -16,10 +16,17 @@
       width: 230px; }
   .banner-box .selected-underline {
     width: 230px;
-    left: 340px; } }
+    left: 340px; }
+  .operation-adv {
+    max-width: 100%; }
+    .operation-adv .adv-inner {
+      width: 1170px; }
+      .operation-adv .adv-inner .adv-content li {
+        width: 378px; } }
 
-.content {
-  background: url(../image/small-content-bg.jpg) no-repeat center top; }
+.content-banner {
+  background: url(../image/small-content-bg.jpg) no-repeat center top;
+  margin-bottom: 10px; }
 
 .banner-box {
   padding-top: 30px;
@@ -73,3 +80,25 @@
   bottom: -3px;
   position: absolute;
   background-color: #e6057d; }
+
+.adv-inner {
+  width: 1000px;
+  margin: 0 auto; }
+  .adv-inner .adv-title {
+    width: 100%; }
+  .adv-inner .adv-content ul {
+    display: block;
+    overflow: hidden; }
+    .adv-inner .adv-content ul li {
+      float: left;
+      width: 328px;
+      margin: 0 18px 18px 0; }
+      .adv-inner .adv-content ul li:nth-child(3n) {
+        margin-right: 0; }
+      .adv-inner .adv-content ul li a {
+        display: block;
+        width: 100%;
+        overflow: hidden; }
+        .adv-inner .adv-content ul li a img {
+          float: left;
+          width: 100%; }

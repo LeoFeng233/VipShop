@@ -45,6 +45,12 @@ task('html', async () => {
     .pipe(dest('./dist/pages'))
     .pipe(load.connect.reload())
 })
+// 处理json
+task('data', async () => {
+  src('./data/*.json')
+    .pipe(dest('./dist/data'))
+    .pipe(load.connect.reload())
+})
 
 task('lib', async () => {
   src(['./lib/**/*.js', './lib/**/*.css'])
@@ -58,6 +64,7 @@ task('watch', async () => {
   watch('./sass/*.scss', series('sass'));
   watch('./script/**/*.js', series('script'));
   watch('./pages/*.html', series('html'));
+  watch('./data/*.json', series('data'));
   watch(['./lib/**/*.js', './lib/**/*.css'], series('lib'));
 })
 
@@ -71,4 +78,4 @@ task('connect', async () => {
 })
 
 // 构建开发包
-task('dev', series('delDist', 'image', 'sass', 'script', 'html', 'lib', 'connect', 'watch'))
+task('dev', series('delDist', 'image', 'sass', 'script', 'html', 'data', 'lib', 'connect', 'watch'))

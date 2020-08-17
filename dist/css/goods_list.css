@@ -251,6 +251,10 @@ body {
         color: #333333;
         line-height: 44px;
         margin: 0 20px 0 300px; }
+      .goods_list .goods_list_container .page_number .page_color {
+        background-color: #f10180;
+        border-color: #f10180;
+        color: #fff; }
       .goods_list .goods_list_container .page_number span {
         float: left;
         width: 44px;
@@ -262,6 +266,5 @@ body {
         color: #848585;
         margin: 2px; }
         .goods_list .goods_list_container .page_number span:hover {
-          background-color: #fcf5f7;
           border-color: #f10180;
-          color: #f10180; }
+          cursor: pointer; }

@@ -1,0 +1,267 @@
+@charset "UTF-8";
+html, body, ul, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, fieldset, legend, table, ol, li, th, td, tr, colgroup, caption {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  vertical-align: middle; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+b, strong {
+  font-weight: normal; }
+
+i, em {
+  font-style: normal; }
+
+textarea {
+  resize: none; }
+
+input, a {
+  outline: none; }
+
+/* 取消点击是的虚线框 */
+table {
+  border-collapse: collapse; }
+
+fieldset, img {
+  border: 0 none; }
+
+body {
+  font: 12px "微软雅黑"; }
+
+.float-l {
+  float: left; }
+
+.float-r {
+  float: right; }
+
+.clearBoth:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+.clearBoth {
+  zoom: 1; }
+
+.borderNo {
+  border: none !important; }
+
+.bgNo {
+  background: none !important; }
+
+/* 固定水平居中垂直居中 */
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto; }
+
+.goods_list {
+  width: 1000px;
+  margin: 0 auto;
+  color: #333333;
+  padding-top: 15px; }
+  .goods_list .goods_list_nav {
+    border: 1px solid #cccccc;
+    position: relative; }
+    .goods_list .goods_list_nav div {
+      border-top: 1px dashed #ddd;
+      overflow: hidden;
+      line-height: 50px;
+      font-family: tahoma; }
+      .goods_list .goods_list_nav div:first-child {
+        border-top: none; }
+      .goods_list .goods_list_nav div h1 {
+        height: 50px;
+        font-size: 12px;
+        float: left;
+        width: 98px;
+        font-weight: normal;
+        padding-left: 20px;
+        color: #666666; }
+      .goods_list .goods_list_nav div h2 {
+        font-size: 12px;
+        float: left;
+        height: 50px; }
+        .goods_list .goods_list_nav div h2 span {
+          width: 700px;
+          float: left;
+          overflow: hidden; }
+          .goods_list .goods_list_nav div h2 span a {
+            float: left;
+            color: #333333;
+            margin-right: 50px; }
+      .goods_list .goods_list_nav div p {
+        height: 20px;
+        border-radius: 3px;
+        line-height: normal;
+        margin: 15px 10px 0 0;
+        float: right; }
+        .goods_list .goods_list_nav div p em {
+          float: left;
+          width: 48px;
+          height: 22px;
+          margin-right: 4px;
+          color: #666666;
+          padding-top: 2px;
+          cursor: pointer; }
+        .goods_list .goods_list_nav div p span {
+          width: 46px;
+          height: 20px;
+          border: 1px dashed #d1d1d1;
+          border-radius: 3px; }
+          .goods_list .goods_list_nav div p span i {
+            color: #ccc;
+            margin: 0 6px 0 4px; }
+    .goods_list .goods_list_nav h3 {
+      width: 120px;
+      height: 26px;
+      border: 1px solid #cccccc;
+      border-top: none;
+      margin: 0 auto;
+      line-height: 26px;
+      text-align: center;
+      font-size: 12px;
+      color: #000000;
+      background-color: #fff;
+      position: absolute;
+      left: 50%;
+      bottom: -27px;
+      margin-left: -60px;
+      cursor: pointer; }
+  .goods_list .goods_list_filter {
+    border: 1px solid #ccc;
+    margin-top: 50px;
+    height: 46px;
+    background-color: #f5f5f5;
+    position: relative; }
+    .goods_list .goods_list_filter ul {
+      float: left;
+      margin-left: -1px;
+      margin-top: -1px;
+      overflow: hidden;
+      height: 48px; }
+      .goods_list .goods_list_filter ul li {
+        float: left;
+        line-height: 46px;
+        text-align: center;
+        border-right: 1px solid #ccc; }
+        .goods_list .goods_list_filter ul li:hover a {
+          color: #f10180; }
+        .goods_list .goods_list_filter ul li:first-child {
+          border: 1px solid #f10180; }
+        .goods_list .goods_list_filter ul li a {
+          float: left;
+          height: 46px;
+          width: 67px;
+          color: #333333; }
+    .goods_list .goods_list_filter .filter_price {
+      float: left;
+      padding: 12px 0 0 10px;
+      height: 36px; }
+      .goods_list .goods_list_filter .filter_price input {
+        border: 1px solid #ccc;
+        margin: 0;
+        padding: 0;
+        width: 52px;
+        height: 22px;
+        padding: 0 5px; }
+    .goods_list .goods_list_filter p {
+      float: right;
+      padding-top: 12px;
+      height: 36px;
+      font-size: 14px;
+      color: #333333; }
+      .goods_list .goods_list_filter p em {
+        margin-right: 20px; }
+        .goods_list .goods_list_filter p em i {
+          color: #f10180; }
+      .goods_list .goods_list_filter p strong {
+        color: #f10180; }
+      .goods_list .goods_list_filter p b {
+        margin-right: 10px; }
+      .goods_list .goods_list_filter p span {
+        float: right;
+        color: #848585;
+        margin-right: 10px;
+        cursor: pointer; }
+  .goods_list .goods_list_container {
+    width: 1000px;
+    margin-top: 20px;
+    overflow: hidden; }
+    .goods_list .goods_list_container .goods_container {
+      width: 1100px;
+      overflow: hidden; }
+      .goods_list .goods_list_container .goods_container div {
+        float: left;
+        margin: 0 20px 20px 0;
+        width: 233px;
+        height: 355px;
+        border: 1px solid #ccc; }
+        .goods_list .goods_list_container .goods_container div img {
+          width: 233px;
+          height: 235px; }
+        .goods_list .goods_list_container .goods_container div h5 {
+          height: 18px;
+          padding-top: 12px;
+          color: #999999;
+          font-size: 14px; }
+          .goods_list .goods_list_container .goods_container div h5 span {
+            float: left;
+            color: #fff;
+            background-color: #ff38c0;
+            width: 44px;
+            font-size: 12px;
+            height: 18px;
+            border-radius: 8px;
+            line-height: 18px;
+            text-align: center;
+            margin-left: 10px; }
+          .goods_list .goods_list_container .goods_container div h5 em {
+            font-size: 23px;
+            color: #333;
+            font-weight: bold;
+            line-height: 20px;
+            margin-left: 4px; }
+          .goods_list .goods_list_container .goods_container div h5 b {
+            text-decoration: line-through;
+            margin: 0 4px; }
+        .goods_list .goods_list_container .goods_container div p {
+          color: #666666;
+          margin: 20px 0 0 10px; }
+    .goods_list .goods_list_container .page_number {
+      width: 1000px;
+      height: 46px;
+      margin: 100px auto 0; }
+      .goods_list .goods_list_container .page_number em {
+        float: left;
+        color: #333333;
+        line-height: 44px;
+        margin: 0 20px 0 300px; }
+      .goods_list .goods_list_container .page_number span {
+        float: left;
+        width: 44px;
+        height: 44px;
+        border: 1px solid #ccc;
+        line-height: 44px;
+        text-align: center;
+        border-radius: 3px;
+        color: #848585;
+        margin: 2px; }
+        .goods_list .goods_list_container .page_number span:hover {
+          background-color: #fcf5f7;
+          border-color: #f10180;
+          color: #f10180; }

@@ -19,7 +19,7 @@ task('delDist', async () => {
 
 // 处理图片
 task('image', async () => {
-  src('./image/*.*')
+  src('./image/**/*.*')
     .pipe(dest('./dist/image'))
     .pipe(load.connect.reload())
 })
@@ -27,9 +27,9 @@ task('image', async () => {
 // 处理sass
 task('sass', async () => {
   src('./sass/*.scss')
-  .pipe(load.sass())
-  .pipe(dest('./dist/css'))
-  .pipe(load.connect.reload())
+    .pipe(load.sass())
+    .pipe(dest('./dist/css'))
+    .pipe(load.connect.reload())
 })
 
 // 处理js
@@ -54,7 +54,7 @@ task('lib', async () => {
 
 // 监听文件变化
 task('watch', async () => {
-  watch('./image/*.*', series('image'));
+  watch('./image/**/*.*', series('image'));
   watch('./sass/*.scss', series('sass'));
   watch('./script/**/*.js', series('script'));
   watch('./pages/*.html', series('html'));

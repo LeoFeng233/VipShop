@@ -69,6 +69,10 @@ body {
   left: 0;
   margin: auto; }
 
+html, body {
+  height: 100%;
+  width: 100%; }
+
 .login_top {
   width: 1000px;
   height: 100px;
@@ -88,3 +92,140 @@ body {
     background: url("../image/jingling5.png") no-repeat;
     background-position: 0 0px;
     background-size: 304px 202px; }
+
+.login_wrap {
+  width: 100%;
+  height: 650px;
+  background: url("../image/login_bg.jpg") no-repeat;
+  background-position-x: -250px; }
+  .login_wrap .login_div {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    height: calc(100% - 100px); }
+  .login_wrap .login_content {
+    width: 360px;
+    border-radius: 2px;
+    float: right;
+    background-color: #fff;
+    border: 1px solid #ccc; }
+    .login_wrap .login_content div {
+      border-bottom: 1px solid #ccc;
+      height: 50px;
+      font: 18px/50px tahoma; }
+      .login_wrap .login_content div span {
+        float: left;
+        width: 180px;
+        height: 50px;
+        text-align: center; }
+      .login_wrap .login_content div span:first-child::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 20px;
+        background-color: #ccc;
+        position: absolute;
+        right: 0;
+        top: 15px; }
+      .login_wrap .login_content div span:first-child {
+        color: #f10180;
+        position: relative; }
+      .login_wrap .login_content div span:hover {
+        color: #f10180;
+        cursor: pointer; }
+    .login_wrap .login_content .login_ma {
+      border: none;
+      margin-top: 36px;
+      height: 172px;
+      padding: 10px 0; }
+      .login_wrap .login_content .login_ma p {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin: 0 auto; }
+        .login_wrap .login_content .login_ma p img {
+          width: 150px;
+          height: 150px; }
+    .login_wrap .login_content h2 {
+      font-size: 12px;
+      color: #333333;
+      margin-top: 20px; }
+      .login_wrap .login_content h2 em {
+        float: left;
+        width: 16px;
+        height: 16px;
+        margin: 0 6px 0 65px;
+        background: url("../image/jingling6.png") no-repeat;
+        background-position: -605px -121px; }
+      .login_wrap .login_content h2 span {
+        color: #f10180; }
+    .login_wrap .login_content .login_method {
+      width: 300px;
+      height: 40px;
+      padding: 30px 0 15px;
+      margin: 0 auto;
+      position: relative;
+      border: none; }
+      .login_wrap .login_content .login_method .line {
+        position: absolute;
+        width: 300px;
+        height: 1px;
+        left: 0;
+        top: 50px;
+        background-color: #e0e0e0; }
+      .login_wrap .login_content .login_method p {
+        position: relative;
+        width: 60px;
+        height: 40px;
+        background-color: #fff;
+        margin: 0 auto; }
+        .login_wrap .login_content .login_method p i {
+          float: left;
+          margin-left: 10px;
+          width: 40px;
+          height: 40px;
+          background: url("../image/jingling6.png") no-repeat;
+          background-position: -580px -161px; }
+    .login_wrap .login_content h5 {
+      font-size: 12px;
+      color: #333333;
+      margin-left: 30px;
+      width: 310px;
+      height: 24px;
+      line-height: 24px;
+      margin-bottom: 15px; }
+      .login_wrap .login_content h5 a {
+        float: left;
+        color: #333333;
+        padding: 0 10px;
+        position: relative; }
+      .login_wrap .login_content h5 a:nth-child(1) {
+        color: #999999; }
+      .login_wrap .login_content h5 a:nth-child(-n+2)::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 8px;
+        width: 1px;
+        height: 10px;
+        background-color: #ccc; }
+      .login_wrap .login_content h5 span {
+        float: left;
+        margin-left: 20px;
+        color: #999999;
+        cursor: pointer; }
+      .login_wrap .login_content h5 strong {
+        float: left;
+        font-size: 14px;
+        margin-left: 28px;
+        cursor: pointer; }
+
+.login_bottom {
+  width: 1000px;
+  height: 78px;
+  margin: 0 auto;
+  font: 12px/78px tahoma;
+  text-align: center;
+  color: #666666; }

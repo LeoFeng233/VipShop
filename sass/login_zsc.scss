@@ -1,0 +1,24 @@
+@import './reset.scss';
+
+.login_top{
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    a{
+        float: left;
+        width: 125px;
+        font-size: 0;
+        height: 100px;
+        background: url('../image/jingling5.png') no-repeat;
+        background-position: 0 -102px;
+        background-size: 304px 202px;
+    }
+    div{
+        float: right;
+        width: 304px;
+        height: 100px;
+        background: url('../image/jingling5.png') no-repeat;
+        background-position: 0 0px;
+        background-size: 304px 202px;
+    }
+}

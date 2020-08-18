@@ -1,12 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商品详情页</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
 </head>
+
 <body>
+    <div class="header clearfix adapt-open">
+        <div class="top-nav">
+            <div class="header-inner">
+                <div class="part-left">
+                    <span class="area-location">深圳市</span>
+                    <i class="arrow-down"></i>
+                </div>
+
+                <div class="part-right">
+                    <div class="login-box not-login">
+                        <div class="item login-btn">
+                            <a href="#">请登录</a>
+                            <div class="user-info">
+                                <div class="title-box"></div>
+                                <div class="info-content"></div>
+                            </div>
+                        </div>
+                        <span class="sep item"></span>
+                        <div class="item regist-btn">
+                            <a href="#">注册</a>
+                        </div><span class="sep item"></span>
+                    </div>
+                    <div class="item check-in">
+                        <i class="top-nav-icon"></i>签到有礼
+                        <div class="check-in-info">
+                            <a href="#" class="check-in-gift-msg">连续签到享心动好礼</a>
+                            <a href="#" class="check-in-btn">签到</a>
+                        </div>
+                    </div>
+                    <span class="sep item"></span>
+                    <div class="item my-order">
+                        <a href="#">我的订单</a>
+                    </div>
+                    <span class="sep item"></span>
+                    <div class="item my-sp-sale clearfix">
+                        <a href="#">我的特卖</a>
+                        <i class="arrow-down"></i>
+                    </div><span class="sep item"></span>
+                    <div class="item">
+                        <a href="#">会员俱乐部</a>
+                        <i class="arrow-down"></i>
+                    </div><span class="sep item"></span>
+                    <div class="item">
+                        <a href="#">客户服务</a>
+                        <i class="arrow-down"></i>
+                    </div><span class="sep item"></span>
+                    <div class="item phone-version">
+                        <a href="#">
+                            <i class="top-nav-icon"></i>
+                            手机版</a>
+                    </div><span class="sep item"></span>
+                    <div class="item">
+                        <a href="#">更多</a>
+                        <i class="arrow-down"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-logo">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="#"><img src="../image/logo.png" alt=""></a>
+                </div>
+                <div class="service-list">
+                    <a href="#" class="item"></a>
+                    <a href="#" class="item"></a>
+                    <a href="#" class="item"></a>
+                </div>
+
+                <div class="chart-btn">
+                    <a href="#">
+                        <i></i>
+                        购物车
+                    </a>
+                    <span class="chart-goods-num">0</span>
+                </div>
+
+                <div class="search-box">
+                    <div class="search-form clearfix">
+                        <input type="text">
+                        <a href="#">
+                            <i></i>
+                        </a>
+                    </div>
+                    <div class="search-candidate">
+                        <a href="#" class="item">连衣裙</a><span class="sep item">|</span>
+                        <a href="#" class="item">护肤套装</a><span class="sep item">|</span>
+                        <a href="#" class="item">耐克Nike</a><span class="sep item">|</span>
+                        <a href="#" class="item">女式休闲裤</a><span class="sep item">|</span>
+                        <a href="#" class="item">女休闲鞋</a><span class="sep item">|</span>
+                        <a href="#" class="item">手机</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="goods-nav">
+            <div class="header-inner">
+                <ul class="goods-nav-list">
+                    <li class="main-category">
+                        <a href="#">
+                            <img src="../image/main-category-icon.png" alt="">
+                            商品分类
+                        </a>
+                    </li>
+                    <li><a href="#" class="home-page">首页</a></li>
+                    <li><a href="#">最后疯抢</a></li>
+                    <li><a href="#">唯品快抢</a></li>
+                    <li><a href="#">品牌清仓</a></li>
+                    <li><a href="#">女装</a></li>
+                    <li><a href="#">母婴</a></li>
+                    <li><a href="#">家电</a></li>
+                    <li><a href="#">国际</a></li>
+                    <li><a href="#">美妆</a></li>
+                    <li><a href="#">鞋包</a></li>
+                    <li><a href="#">男装</a></li>
+                    <li><a href="#">更多
+                            <i class="vipFont">&#xe638;</i>
+                        </a></li>
+                </ul>
+
+                <div class="nav-cate-down">
+                    <ul class="all-cate-list">
+                        <li><span>女装/男装/内衣</span></li>
+                        <li><span>女鞋/男鞋/箱包</span></li>
+                        <li><span>护肤彩妆/个护</span></li>
+                        <li><span>运动户外</span></li>
+                        <li><span>家电数码</span></li>
+                        <li><span>母婴童装</span></li>
+                        <li><span>手表配饰</span></li>
+                        <li><span>居家用品</span></li>
+                        <li><span>唯品生活</span></li>
+                        <li><span>唯品国际/唯品奢</span></li>
+                        <li><span>医药健康</span></li>
+                    </ul>
+
+                    <div class="cate-panel">
+                        <div class="cate-part">
+                            <div class="cate-part-col1">
+                                <div class="cate-content">
+                                    <dl>
+                                        <dt>全球馆</dt>
+                                        <dd>
+                                            <a href="#">韩国馆</a>
+                                            <a href="#">美洲馆</a>
+                                            <a href="#">欧洲馆</a>
+                                            <a href="#">日本馆</a>
+                                            <a href="#">澳新馆</a>
+                                            <a href="#">港台馆</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="cate-part-col2">
+                                <h4>精品推荐</h4>
+                                <a href="javascript:vodi(0)" class="brand-panel">
+                                    <img src="../image/brandLogos/primary.png" alt="">
+                                    <p>恩裳</p>
+                                </a>
+                                <a href="javascript:vodi(0)" class="brand-panel">
+                                    <img src="../image/brandLogos/primary(1).png" alt="">
+                                    <p>音儿</p>
+                                </a>
+                                <a href="javascript:vodi(0)" class="brand-panel">
+                                    <img src="../image/brandLogos/primary(2).png" alt="">
+                                    <p>波司登</p>
+                                </a>
+                                <a href="javascript:vodi(0)" class="brand-panel">
+                                    <img src="../image/brandLogos/primary(3).png" alt="">
+                                    <p>诗篇</p>
+                                </a>
+                                <a href="javascript:vodi(0)" class="brand-panel">
+                                    <img src="../image/brandLogos/primary(4).png" alt="">
+                                    <p>哥弟</p>
+                                </a>
+                                <a href="javascript:vodi(0)" class="brand-panel">
+                                    <img src="../image/brandLogos/primary(5).png" alt="">
+                                    <p>罗蒙</p>
+                                </a>
+                                <a href="javascript:vodi(0)" class="brand-panel">
+                                    <img src="../image/brandLogos/primary(6).png" alt="">
+                                    <p>富铤</p>
+                                </a>
+                                <a href="javascript:vodi(0)" class="brand-panel">
+                                    <img src="../image/brandLogos/primary(7).png" alt="">
+                                    <p>米皇</p>
+                                </a>
+                                <a href="javascript:vodi(0)" class="brand-panel">
+                                    <img src="../image/brandLogos/primary(8).png" alt="">
+                                    <p>帕罗</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class=" sidebar">
+        <div class="mid-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="#" class="my-account">
+                        <i class="nav-icon">&#xe610;
+                            <i class="sidebar-name">账号</i>
+                        </i>
+
+                    </a>
+                </li>
+                <li class="my-shop-package clearfix">
+                    <a href="#">
+                        <i class="nav-icon">&#xe65a;</i>
+                        <p>购物袋</p>
+                        <span class="package-goods-num">0</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="my-service">
+                        <i class="nav-icon">&#xe692;</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="my-service">
+                        <i class="nav-icon">&#xe635;</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="my-service">
+                        <i class="nav-icon">&#xe60f;</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="my-service">
+                        <i class="nav-icon">&#xe63b;</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bottom-nav">
+            <a href="#" class="my-service">
+                <i class="nav-icon">&#xe602;</i>
+            </a>
+            <a href="#" class="my-service">
+                <i class="nav-icon">&#xe646;</i>
+            </a>
+        </div>
+    </div>
+
     <!-- 商品固定导航栏（上方，开始隐藏） -->
     <div class="nav_fixed_top">
         <div class="nav_fix_wrap">
@@ -34,27 +292,27 @@
                 <img src="../image/max.jpg" alt="">
                 <span></span>
             </div>
-            
+
             <div class="detail_l_Scroll">
                 <span class="det_pre">&lt;</span>
                 <span class="det_next">&gt;</span>
                 <div class="detl_Scr_Wrap">
                     <div>
-                        <div><img src="../image/min01.jpg" alt=""></div> 
-                        <div><img src="../image/min02.jpg" alt=""></div>                      
-                        <div><img src="../image/min03.jpg" alt=""></div>                      
-                        <div><img src="../image/min04.jpg" alt=""></div>                      
-                        <div><img src="../image/min05.jpg" alt=""></div>                      
-                        <div><img src="../image/min06.jpg" alt=""></div>                      
-                        <div><img src="../image/min07.jpg" alt=""></div>                      
-                        <div><img src="../image/min08.jpg" alt=""></div>                      
-                        <div><img src="../image/min09.jpg" alt=""></div>                      
-                        <div><img src="../image/min10.jpg" alt=""></div>                      
-                        
+                        <div><img src="../image/min01.jpg" alt=""></div>
+                        <div><img src="../image/min02.jpg" alt=""></div>
+                        <div><img src="../image/min03.jpg" alt=""></div>
+                        <div><img src="../image/min04.jpg" alt=""></div>
+                        <div><img src="../image/min05.jpg" alt=""></div>
+                        <div><img src="../image/min06.jpg" alt=""></div>
+                        <div><img src="../image/min07.jpg" alt=""></div>
+                        <div><img src="../image/min08.jpg" alt=""></div>
+                        <div><img src="../image/min09.jpg" alt=""></div>
+                        <div><img src="../image/min10.jpg" alt=""></div>
+
                     </div>
                 </div>
             </div>
-            
+
             <div class="det_l_text">
                 <em>商品编码：HCL4.774.8.22.2</em>
                 <span>收藏商品</span>
@@ -74,7 +332,7 @@
                 <div>
                     <i>¥</i><span>25900</span><b>¥37000</b><strong>7折</strong>
                 </div>
-                <p><span>限制</span>该商品为特殊商品, 不支持使用全场券、品类券</p>                
+                <p><span>限制</span>该商品为特殊商品, 不支持使用全场券、品类券</p>
             </div>
             <div class="det_r_addr">
                 <dl>
@@ -90,7 +348,7 @@
                     <div>1<span>-</span><span>+</span></div>
                 </dl>
                 <h1><span>加入购物车</span></h1>
-            </div> 
+            </div>
             <div class="det_r_service">
                 <p>
                     <i>客服</i><em>在线客服</em><i>(09:00-22:00)</i>
@@ -102,7 +360,7 @@
                     <span class="no_ser">不支持7天无理由退货</span>
                     <span class="no_ser">不支持换货</span>
                 </p>
-            </div>           
+            </div>
         </div>
     </div>
     <!-- 商品详细参数 -->
@@ -240,7 +498,7 @@
                     </div>
                 </div>
                 <div class="eval_r">
-                    <p>非常喜欢，简单中显示出稳重，稳重中略显出风度</p>                   
+                    <p>非常喜欢，简单中显示出稳重，稳重中略显出风度</p>
                     <h4>2020-06-11 17:25:36</h4>
                 </div>
             </div>
@@ -253,7 +511,7 @@
                     </div>
                 </div>
                 <div class="eval_r">
-                    <p>唯品会的客服售后真的特别好，很满意！值得信赖</p>                   
+                    <p>唯品会的客服售后真的特别好，很满意！值得信赖</p>
                     <h4>2020-05-20 21:37:13</h4>
                 </div>
             </div>
@@ -266,7 +524,7 @@
                     </div>
                 </div>
                 <div class="eval_r">
-                    <p>款式不错，就是皮带有点短到最后一个孔了</p>                   
+                    <p>款式不错，就是皮带有点短到最后一个孔了</p>
                     <h4>2020-06-24 11:06:52</h4>
                 </div>
             </div>
@@ -393,7 +651,7 @@
                                     <div><span>¥4473</span><del>¥6300</del></div>
                                 </li>
                             </ul>
-                            <ul>                                
+                            <ul>
                                 <li>
                                     <img src="../image/like_scroll03.jpg" alt="">
                                     <p>雷达晶萃系列钻石刻度日期显示棒形指针瑞士机械男士手表</p>
@@ -448,52 +706,52 @@
                             <ul>
                                 <li>
                                     <img src="../image/like_scroll04.jpg" alt="">
-                                    <p>雷达皓星系列  稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
+                                    <p>雷达皓星系列 稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
                                     <div><span>¥18565</span><del>¥23500</del></div>
                                 </li>
                                 <li>
                                     <img src="../image/like_scroll04.jpg" alt="">
-                                    <p>雷达皓星系列  稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
+                                    <p>雷达皓星系列 稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
                                     <div><span>¥18565</span><del>¥23500</del></div>
                                 </li>
                                 <li>
                                     <img src="../image/like_scroll04.jpg" alt="">
-                                    <p>雷达皓星系列  稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
+                                    <p>雷达皓星系列 稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
                                     <div><span>¥18565</span><del>¥23500</del></div>
                                 </li>
                                 <li>
                                     <img src="../image/like_scroll04.jpg" alt="">
-                                    <p>雷达皓星系列  稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
+                                    <p>雷达皓星系列 稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
                                     <div><span>¥18565</span><del>¥23500</del></div>
                                 </li>
                                 <li>
                                     <img src="../image/like_scroll04.jpg" alt="">
-                                    <p>雷达皓星系列  稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
+                                    <p>雷达皓星系列 稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
                                     <div><span>¥18565</span><del>¥23500</del></div>
                                 </li>
                                 <li>
                                     <img src="../image/like_scroll04.jpg" alt="">
-                                    <p>雷达皓星系列  稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
+                                    <p>雷达皓星系列 稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
                                     <div><span>¥18565</span><del>¥23500</del></div>
                                 </li>
                                 <li>
                                     <img src="../image/like_scroll04.jpg" alt="">
-                                    <p>雷达皓星系列  稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
+                                    <p>雷达皓星系列 稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
                                     <div><span>¥18565</span><del>¥23500</del></div>
                                 </li>
                                 <li>
                                     <img src="../image/like_scroll04.jpg" alt="">
-                                    <p>雷达皓星系列  稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
+                                    <p>雷达皓星系列 稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
                                     <div><span>¥18565</span><del>¥23500</del></div>
                                 </li>
                                 <li>
                                     <img src="../image/like_scroll04.jpg" alt="">
-                                    <p>雷达皓星系列  稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
+                                    <p>雷达皓星系列 稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
                                     <div><span>¥18565</span><del>¥23500</del></div>
                                 </li>
                                 <li>
                                     <img src="../image/like_scroll04.jpg" alt="">
-                                    <p>雷达皓星系列  稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
+                                    <p>雷达皓星系列 稀有蓝色太阳纹表盘 钻石刻度 机械女表</p>
                                     <div><span>¥18565</span><del>¥23500</del></div>
                                 </li>
                             </ul>
@@ -568,7 +826,8 @@
                     </dl>
                     <dl class="goods_consult_item">
                         <dt>为什么售后维修时效较长？</dt>
-                        <dd>退回供应商后，如更换电池、表带维护等寄回时间约1-3个工作日；机芯或零部件故障等问题，需送修至品牌售后服务中心并等待1-3个月不等。为了保证维修进度请务必完善退回信息：订单号、故障原因、回寄地址。</dd>
+                        <dd>退回供应商后，如更换电池、表带维护等寄回时间约1-3个工作日；机芯或零部件故障等问题，需送修至品牌售后服务中心并等待1-3个月不等。为了保证维修进度请务必完善退回信息：订单号、故障原因、回寄地址。
+                        </dd>
                     </dl>
                     <dl class="goods_consult_item">
                         <dt>产品是否有相关保障？</dt>
@@ -580,19 +839,23 @@
                     </dl>
                     <dl class="goods_consult_item">
                         <dt>产品佩带都需要注意什么呢？</dt>
-                        <dd>请勿在热水浴、桑拿浴、或温度变化很大的环境中使用手表(包括防水表)。请勿在水中操作手表的按钮和调校表冠。请定期清洁表带、表壳；如是皮质表带则避免与水分、湿气、化妆品等接触，同时避免暴晒。</dd>
+                        <dd>请勿在热水浴、桑拿浴、或温度变化很大的环境中使用手表(包括防水表)。请勿在水中操作手表的按钮和调校表冠。请定期清洁表带、表壳；如是皮质表带则避免与水分、湿气、化妆品等接触，同时避免暴晒。
+                        </dd>
                     </dl>
                     <dl class="goods_consult_item">
                         <dt>刚收到石英腕表不走是什么原因？</dt>
-                        <dd>石英手表从出厂进口到国内都是需要时间，在此时间内手表均为带电状态，因此会有收到后电池由于电量不足，导致停走问题。如您购买的腕表遇到此种情况，请您联系售后，不要私自更换电池，以免对您的腕表造成不当影响。</dd>
+                        <dd>石英手表从出厂进口到国内都是需要时间，在此时间内手表均为带电状态，因此会有收到后电池由于电量不足，导致停走问题。如您购买的腕表遇到此种情况，请您联系售后，不要私自更换电池，以免对您的腕表造成不当影响。
+                        </dd>
                     </dl>
                     <dl class="goods_consult_item">
                         <dt>刚收到机械腕表不走是什么原因?</dt>
-                        <dd>机械手表刚收到时因为发条没有储能是停走状态的，佩戴前需要您手动上弦，普通机械表满弦可走约40小时左右，80机芯满弦后可走约80小时左右。如果中途停止佩戴或运动量较少，手表就可能会停走。</dd>
+                        <dd>机械手表刚收到时因为发条没有储能是停走状态的，佩戴前需要您手动上弦，普通机械表满弦可走约40小时左右，80机芯满弦后可走约80小时左右。如果中途停止佩戴或运动量较少，手表就可能会停走。
+                        </dd>
                     </dl>
                     <dl class="goods_consult_item">
                         <dt>是否是组装表？</dt>
-                        <dd>腕表均是在瑞士完成组装的。手表表盘位置标记“swiss made”字样，证明该腕表至少60%的机芯部件在瑞士制造，且机芯是由瑞士制造的。机芯及腕表本身是在瑞士组装完成，且在瑞士对腕表进行最终检测。</dd>
+                        <dd>腕表均是在瑞士完成组装的。手表表盘位置标记“swiss
+                            made”字样，证明该腕表至少60%的机芯部件在瑞士制造，且机芯是由瑞士制造的。机芯及腕表本身是在瑞士组装完成，且在瑞士对腕表进行最终检测。</dd>
                     </dl>
                     <dl class="goods_consult_item">
                         <dt>腕表佩带中表盘内为什么会产生气雾？</dt>
@@ -600,11 +863,14 @@
                     </dl>
                     <dl class="goods_consult_item">
                         <dt>自己如何清理腕表？</dt>
-                        <dd>手表可以进行定期的清洁，手表的类型不同,表带表壳的材质不同，使用的清洁方法也不一样，请详细参考保养说明书。 一般的金属链带和表壳，可以使用清水干布擦拭，切记请勿腕表浸泡在水中。</dd>
+                        <dd>手表可以进行定期的清洁，手表的类型不同,表带表壳的材质不同，使用的清洁方法也不一样，请详细参考保养说明书。 一般的金属链带和表壳，可以使用清水干布擦拭，切记请勿腕表浸泡在水中。
+                        </dd>
                     </dl>
                     <dl class="goods_consult_item">
                         <dt>价格说明</dt>
-                        <dd>唯品会展示的中间未划横线价格（显示如¥799）为唯品会销售价，该价格是交易成交价，是您最终决定是否购买商品的依据。 唯品会展示的中间划横线价格（显示如 ¥2899）为参考价，采集自品牌专柜标价、商品吊牌价、品牌官网价格或由供应商提供的正品零售价；由于地区、时间、货币汇率等的差异及存在品牌方调价、市场行情波动、产品批次等因素，品牌专柜标价、商品吊牌价等可能会与您购物时网页显示的划线价不一致。该价格仅供您参考。 折扣比为唯品会销售价与参考价的对比（该值四舍五入后采小数点后1位，如¥799/¥2899=0.2756=2.8折），该对比值仅供您参考，不作为结算基数。</dd>
+                        <dd>唯品会展示的中间未划横线价格（显示如¥799）为唯品会销售价，该价格是交易成交价，是您最终决定是否购买商品的依据。 唯品会展示的中间划横线价格（显示如
+                            ¥2899）为参考价，采集自品牌专柜标价、商品吊牌价、品牌官网价格或由供应商提供的正品零售价；由于地区、时间、货币汇率等的差异及存在品牌方调价、市场行情波动、产品批次等因素，品牌专柜标价、商品吊牌价等可能会与您购物时网页显示的划线价不一致。该价格仅供您参考。
+                            折扣比为唯品会销售价与参考价的对比（该值四舍五入后采小数点后1位，如¥799/¥2899=0.2756=2.8折），该对比值仅供您参考，不作为结算基数。</dd>
                     </dl>
                 </div>
             </div>
@@ -682,7 +948,7 @@
                     <dt>唯品会APP二维码</dt>
                     <img src="../image/footer_ma.png" alt="">
                     <p>下载唯品会移动APP</p>
-                </dl>                
+                </dl>
             </div>
 
             <div class="footer_aboutus">
@@ -697,9 +963,10 @@
                 <span>联系我们</span>
             </div>
             <p class="footer_text">
-                Copyright © 2008-2020 vip.com，All Rights Reserved  使用本网站即表示接受 唯品会用户协议。版权所有 广州唯品会电子商务有限公司<br>
-粤公网安备 44010302111111号    粤ICP备08114786号 增值业务经营许可证：粤B2-20170777 网络文化经营许可证：粤网文〔2018〕5030-1743号<br>
-经营主体证照   风险监测信息   互联网药品信息服务资格证书：（粤）-经营性-2018-0271 网络食品交易第三方平台备案凭证：粤B2-20170777 医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号
+                Copyright © 2008-2020 vip.com，All Rights Reserved 使用本网站即表示接受 唯品会用户协议。版权所有 广州唯品会电子商务有限公司<br>
+                粤公网安备 44010302111111号 粤ICP备08114786号 增值业务经营许可证：粤B2-20170777 网络文化经营许可证：粤网文〔2018〕5030-1743号<br>
+                经营主体证照 风险监测信息 互联网药品信息服务资格证书：（粤）-经营性-2018-0271 网络食品交易第三方平台备案凭证：粤B2-20170777
+                医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号
             </p>
             <div class="footer_btm">
                 <p>
@@ -718,5 +985,7 @@
 
     <script src="../script/jquery-2.1.4.js"></script>
     <script src="../script/detail.js"></script>
+    <script type="module" src="../script/header.js"></script>
 </body>
+
 </html>

@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'iconfont';
+    /* project id 2007606 */
+    src: url('//at.alicdn.com/t/font_2007606_ayy8ikuhb8b.eot');
+    src: url('//at.alicdn.com/t/font_2007606_ayy8ikuhb8b.eot?#iefix') format('embedded-opentype'),
+        url('//at.alicdn.com/t/font_2007606_ayy8ikuhb8b.woff2') format('woff2'),
+        url('//at.alicdn.com/t/font_2007606_ayy8ikuhb8b.woff') format('woff'),
+        url('//at.alicdn.com/t/font_2007606_ayy8ikuhb8b.ttf') format('truetype'),
+        url('//at.alicdn.com/t/font_2007606_ayy8ikuhb8b.svg#iconfont') format('svg');
+}
+
 @media screen and (min-width: 1441px) {
 
     div.content-banner {
@@ -64,6 +75,31 @@
                 }
             }
 
+        }
+    }
+
+    .sp-sale {
+        .sp-sale-inner {
+            width: 1170px;
+
+            .sp-sale-title {
+                margin: 0 auto 30px;
+            }
+
+            .sp-sale-content {
+                .sp-sale-content-li {
+                    margin-bottom: 30px;
+
+                    .sp-sale-goods-list .sale-goods-el {
+                        width: 570px;
+                        height: 370px;
+
+                        .goods-collect-button {
+                            top: 248px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -183,6 +219,11 @@
             }
         }
     }
+}
+
+.daily-see {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .see-inner {
@@ -362,6 +403,152 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.sp-sale-inner {
+    width: 1000px;
+    margin: 0 auto 20px;
+
+    .sp-sale-title {
+        width: 100%;
+        overflow: hidden;
+
+        img {
+            float: left;
+            width: 100%;
+        }
+    }
+
+    .sp-sale-content {
+        width: 100%;
+        position: relative;
+
+        .sp-sale-content-li {
+            width: 100%;
+            margin-bottom: 30px;
+
+            .sale-tile {
+                width: 100%;
+                margin-bottom: 20px;
+                overflow: hidden;
+            }
+
+            .sp-sale-goods-list {
+                width: 100%;
+
+                .sale-goods-el {
+                    float: left;
+                    overflow: hidden;
+                    width: 490px;
+                    height: 333px;
+                    margin-right: 20px;
+                    position: relative;
+
+                    &:nth-child(2n) {
+                        margin-right: 0;
+                    }
+
+                    &:hover .goods-collect-button {
+                        opacity: 1;
+                    }
+
+                    .goods-collect-button {
+                        opacity: 0;
+                        display: block;
+                        position: absolute;
+                        height: 20px;
+                        line-height: 20px;
+                        right: 10px;
+                        top: 210px;
+
+                        width: auto;
+                        transition: .2s linear;
+                        min-width: 34px;
+                        border-radius: 11px;
+                        font-size: 12px;
+                        background-color: #f2f2f2;
+                        text-align: center;
+                        overflow: hidden;
+
+                        .collect-button-inner {
+                            display: block;
+                            width: 71px;
+                            background: #fff;
+                            border: 1px solid #ededed;
+                            color: #333;
+                            border-radius: 12px;
+                            height: 18px;
+                            line-height: 18px;
+                            padding: 0 8px;
+
+                            cursor: pointer;
+                        }
+
+                        .vipFont {
+                            font-family: iconfont;
+                            color: #f32b80;
+                            font-size: 14px;
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .goods-el-des {
+                        padding-left: 10px;
+
+                        .goods-des {
+                            display: block;
+                            margin-top: 20px;
+                            font-size: 18px;
+                            font-weight: bolder;
+                            color: #333;
+                        }
+
+                        .brand-goods-discount {
+                            height: 32px;
+                            font-size: 18px;
+                            line-height: 32px;
+
+                            .discount-num {
+                                font-weight: bold;
+                                color: #f10582;
+                                margin-right: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.kind-nav {
+    padding: 5px 7px 0;
+    width: 62px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    min-height: 100px;
+    position: absolute;
+    top: 0;
+    left: -109px;
+    background-color: #fff;
+
+    .kind-nav-item {
+        display: block;
+        padding: 8px 5px;
+        height: 20px;
+        line-height: 20px;
+        border-bottom: 1px solid #eaeaea;
+        color: #666;
+
+        .kind-nav-icon {
+            font-family: iconfont;
+            font-size: 18px;
+            margin-right: 6px;
         }
     }
 }

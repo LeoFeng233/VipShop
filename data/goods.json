@@ -1,198 +1,203 @@
 [
     {
+        "goods_id": "1",
         "imgUrl": "../image/goods_list01.jpg",
-        "sourcePrice": "¥854",
-        "currentPrice": "¥4669",
+        "currentPrice": "¥854",
+        "sourcePrice": "¥4669",
         "zhe": "1.9折",
-        "description": "【 高性价比爆款 】时尚情侣表休闲简约钢带机械男女手表5934"
+        "max_img": "../image/goods_max01.jpg",
+        "description": "【 高性价比爆款 】时尚情侣表休闲简约钢带机械男女手表5934",
+        "detail_imgs": ["../image/goods1_min01.jpg", "../image/goods1_min02.jpg", "../image/goods1_min03.jpg", "../image/goods1_min04.jpg","../image/goods1_min05.jpg","../image/goods1_min06.jpg","../image/goods1_min07.jpg","../image/goods1_min08.jpg","../image/goods1_min09.jpg","../image/goods1_min10.jpg"]
     },
     {
+        "goods_id": "2",
         "imgUrl": "../image/goods_list02.jpg",
-        "sourcePrice": "¥368",
-        "currentPrice": "¥2380",
+        "currentPrice": "¥368",
+        "sourcePrice": "¥2380",
         "zhe": "1.5折",
-        "description": "【七夕好礼】情人节酷炫多功能全自动商务机械皮带男士手表"
+        "max_img": "../image/goods_max02.jpg",
+        "description": "【七夕好礼】情人节酷炫多功能全自动商务机械皮带男士手表",
+        "detail_imgs": ["../image/goods2_min01.jpg", "../image/goods2_min02.jpg", "../image/goods2_min03.jpg", "../image/goods2_min04.jpg","../image/goods2_min05.jpg","../image/goods2_min06.jpg","../image/goods2_min07.jpg","../image/goods2_min08.jpg","../image/goods2_min09.jpg","../image/goods2_min10.jpg"]
     },
     {
+        "goods_id": "3",
         "imgUrl": "../image/goods_list03.jpg",
-        "sourcePrice": "¥1238",
-        "currentPrice": "¥4499",
+        "currentPrice": "¥1238",
+        "sourcePrice": "¥4499",
         "zhe": "2.8折",
-        "description": "礼盒套装简约时尚自动机械男士手表钢带男表"
+        "max_img": "../image/goods_max03.jpg",
+        "description": "礼盒套装简约时尚自动机械男士手表钢带男表",
+        "detail_imgs": ["../image/goods3_min01.jpg", "../image/goods3_min02.jpg", "../image/goods3_min03.jpg", "../image/goods3_min04.jpg","../image/goods3_min05.jpg","../image/goods3_min06.jpg","../image/goods3_min07.jpg","../image/goods3_min08.jpg","../image/goods3_min09.jpg","../image/goods3_min10.jpg"]
     },
     {
+        "goods_id": "4",
         "imgUrl": "../image/goods_list04.jpg",
-        "sourcePrice": "¥199",
-        "currentPrice": "¥1690",
+        "currentPrice": "¥199",
+        "sourcePrice": "¥1690",
         "zhe": "1.2折",
-        "description": "【专柜同款】全自动机械表男款机械男士手表男表对表"
+        "max_img": "../image/goods_max04.jpg",
+        "description": "【专柜同款】全自动机械表男款机械男士手表男表对表",
+        "detail_imgs": ["../image/goods4_min01.jpg", "../image/goods4_min02.jpg", "../image/goods4_min03.jpg", "../image/goods4_min04.jpg","../image/goods4_min05.jpg","../image/goods4_min06.jpg","../image/goods4_min07.jpg","../image/goods4_min08.jpg","../image/goods4_min09.jpg","../image/goods4_min10.jpg"]
     },
     {
+        "goods_id": "5",
         "imgUrl": "../image/goods_list05.jpg",
-        "sourcePrice": "¥1138",
-        "currentPrice": "¥4669",
+        "currentPrice": "¥1138",
+        "sourcePrice": "¥4669",
         "zhe": "2.3折",
-        "description": "【七夕礼物皮带套盒】贾乃亮同款男士全自动机械镂空男式手表"
+        "max_img": "../image/goods_max05.jpg",
+        "description": "【七夕礼物皮带套盒】贾乃亮同款男士全自动机械镂空男式手表",
+        "detail_imgs": ["../image/goods5_min01.jpg", "../image/goods5_min02.jpg", "../image/goods5_min03.jpg", "../image/goods5_min04.jpg","../image/goods5_min05.jpg","../image/goods5_min06.jpg","../image/goods5_min07.jpg","../image/goods5_min08.jpg","../image/goods5_min09.jpg","../image/goods5_min10.jpg"]
     },
     {
+        "goods_id": "6",
         "imgUrl": "../image/goods_list06.jpg",
-        "sourcePrice": "¥545",
-        "currentPrice": "¥3400",
+        "currentPrice": "¥545",
+        "sourcePrice": "¥3400",
         "zhe": "1.6折",
-        "description": "【浓情攻略情人节礼物表露真芯】男士多功能自动机械手表男表腕表"
+        "max_img": "../image/goods_max06.jpg",
+        "description": "【浓情攻略情人节礼物表露真芯】男士多功能自动机械手表男表腕表",
+        "detail_imgs": ["../image/goods6_min01.jpg", "../image/goods6_min02.jpg", "../image/goods6_min03.jpg", "../image/goods6_min04.jpg","../image/goods6_min05.jpg","../image/goods6_min06.jpg","../image/goods6_min07.jpg","../image/goods6_min08.jpg","../image/goods6_min09.jpg","../image/goods6_min10.jpg"]
     },
     {
+        "goods_id": "7",
         "imgUrl": "../image/goods_list07.jpg",
-        "sourcePrice": "¥3308",
-        "currentPrice": "¥4880",
+        "currentPrice": "¥3308",
+        "sourcePrice": "¥4880",
         "zhe": "6.9折",
-        "description": "天梭TISSOT 力洛克系列 80机芯日期显示机械男表"
+        "max_img": "../image/goods_max07.jpg",
+        "description": "天梭TISSOT 力洛克系列 80机芯日期显示机械男表",
+        "detail_imgs": ["../image/goods7_min01.jpg", "../image/goods7_min02.jpg", "../image/goods7_min03.jpg", "../image/goods7_min04.jpg","../image/goods7_min05.jpg","../image/goods7_min06.jpg","../image/goods7_min07.jpg","../image/goods7_min08.jpg","../image/goods7_min09.jpg","../image/goods7_min10.jpg"]
     },
     {
+        "goods_id": "8",
         "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
+        "currentPrice": "¥1310",
+        "sourcePrice": "¥4980",
         "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
+        "max_img": "../image/goods_max08.jpg",
+        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械",
+        "detail_imgs": ["../image/goods8_min01.jpg", "../image/goods8_min02.jpg", "../image/goods8_min03.jpg", "../image/goods8_min04.jpg","../image/goods8_min05.jpg","../image/goods8_min06.jpg","../image/goods8_min07.jpg","../image/goods8_min08.jpg","../image/goods8_min09.jpg","../image/goods8_min10.jpg"]
     },
     {
+        "goods_id": "8",
         "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
+        "currentPrice": "¥1310",
+        "sourcePrice": "¥4980",
         "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
+        "max_img": "../image/goods_max08.jpg",
+        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械",
+        "detail_imgs": ["../image/goods8_min01.jpg", "../image/goods8_min02.jpg", "../image/goods8_min03.jpg", "../image/goods8_min04.jpg","../image/goods8_min05.jpg","../image/goods8_min06.jpg","../image/goods8_min07.jpg","../image/goods8_min08.jpg","../image/goods8_min09.jpg","../image/goods8_min10.jpg"]
     },
     {
+        "goods_id": "8",
         "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
+        "currentPrice": "¥1310",
+        "sourcePrice": "¥4980",
         "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
+        "max_img": "../image/goods_max08.jpg",
+        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械",
+        "detail_imgs": ["../image/goods8_min01.jpg", "../image/goods8_min02.jpg", "../image/goods8_min03.jpg", "../image/goods8_min04.jpg","../image/goods8_min05.jpg","../image/goods8_min06.jpg","../image/goods8_min07.jpg","../image/goods8_min08.jpg","../image/goods8_min09.jpg","../image/goods8_min10.jpg"]
     },
     {
+        "goods_id": "8",
         "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
+        "currentPrice": "¥1310",
+        "sourcePrice": "¥4980",
         "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
+        "max_img": "../image/goods_max08.jpg",
+        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械",
+        "detail_imgs": ["../image/goods8_min01.jpg", "../image/goods8_min02.jpg", "../image/goods8_min03.jpg", "../image/goods8_min04.jpg","../image/goods8_min05.jpg","../image/goods8_min06.jpg","../image/goods8_min07.jpg","../image/goods8_min08.jpg","../image/goods8_min09.jpg","../image/goods8_min10.jpg"]
     },
     {
+        "goods_id": "8",
         "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
+        "currentPrice": "¥1310",
+        "sourcePrice": "¥4980",
         "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
+        "max_img": "../image/goods_max08.jpg",
+        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械",
+        "detail_imgs": ["../image/goods8_min01.jpg", "../image/goods8_min02.jpg", "../image/goods8_min03.jpg", "../image/goods8_min04.jpg","../image/goods8_min05.jpg","../image/goods8_min06.jpg","../image/goods8_min07.jpg","../image/goods8_min08.jpg","../image/goods8_min09.jpg","../image/goods8_min10.jpg"]
     },
     {
+        "goods_id": "8",
         "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
+        "currentPrice": "¥1310",
+        "sourcePrice": "¥4980",
         "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
+        "max_img": "../image/goods_max08.jpg",
+        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械",
+        "detail_imgs": ["../image/goods8_min01.jpg", "../image/goods8_min02.jpg", "../image/goods8_min03.jpg", "../image/goods8_min04.jpg","../image/goods8_min05.jpg","../image/goods8_min06.jpg","../image/goods8_min07.jpg","../image/goods8_min08.jpg","../image/goods8_min09.jpg","../image/goods8_min10.jpg"]
     },
     {
+        "goods_id": "8",
         "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
+        "currentPrice": "¥1310",
+        "sourcePrice": "¥4980",
         "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
+        "max_img": "../image/goods_max08.jpg",
+        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械",
+        "detail_imgs": ["../image/goods8_min01.jpg", "../image/goods8_min02.jpg", "../image/goods8_min03.jpg", "../image/goods8_min04.jpg","../image/goods8_min05.jpg","../image/goods8_min06.jpg","../image/goods8_min07.jpg","../image/goods8_min08.jpg","../image/goods8_min09.jpg","../image/goods8_min10.jpg"]
     },
     {
+        "goods_id": "8",
         "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
+        "currentPrice": "¥1310",
+        "sourcePrice": "¥4980",
         "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
+        "max_img": "../image/goods_max08.jpg",
+        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械",
+        "detail_imgs": ["../image/goods8_min01.jpg", "../image/goods8_min02.jpg", "../image/goods8_min03.jpg", "../image/goods8_min04.jpg","../image/goods8_min05.jpg","../image/goods8_min06.jpg","../image/goods8_min07.jpg","../image/goods8_min08.jpg","../image/goods8_min09.jpg","../image/goods8_min10.jpg"]
     },
     {
+        "goods_id": "8",
         "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
+        "currentPrice": "¥1310",
+        "sourcePrice": "¥4980",
         "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
+        "max_img": "../image/goods_max08.jpg",
+        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械",
+        "detail_imgs": ["../image/goods8_min01.jpg", "../image/goods8_min02.jpg", "../image/goods8_min03.jpg", "../image/goods8_min04.jpg","../image/goods8_min05.jpg","../image/goods8_min06.jpg","../image/goods8_min07.jpg","../image/goods8_min08.jpg","../image/goods8_min09.jpg","../image/goods8_min10.jpg"]
     },
     {
+        "goods_id": "8",
         "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
+        "currentPrice": "¥1310",
+        "sourcePrice": "¥4980",
         "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
+        "max_img": "../image/goods_max08.jpg",
+        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械",
+        "detail_imgs": ["../image/goods8_min01.jpg", "../image/goods8_min02.jpg", "../image/goods8_min03.jpg", "../image/goods8_min04.jpg","../image/goods8_min05.jpg","../image/goods8_min06.jpg","../image/goods8_min07.jpg","../image/goods8_min08.jpg","../image/goods8_min09.jpg","../image/goods8_min10.jpg"]
     },
     {
+        "goods_id": "8",
         "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
+        "currentPrice": "¥1310",
+        "sourcePrice": "¥4980",
         "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
+        "max_img": "../image/goods_max08.jpg",
+        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械",
+        "detail_imgs": ["../image/goods8_min01.jpg", "../image/goods8_min02.jpg", "../image/goods8_min03.jpg", "../image/goods8_min04.jpg","../image/goods8_min05.jpg","../image/goods8_min06.jpg","../image/goods8_min07.jpg","../image/goods8_min08.jpg","../image/goods8_min09.jpg","../image/goods8_min10.jpg"]
     },
     {
+        "goods_id": "8",
         "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
+        "currentPrice": "¥1310",
+        "sourcePrice": "¥4980",
         "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
+        "max_img": "../image/goods_max08.jpg",
+        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械",
+        "detail_imgs": ["../image/goods8_min01.jpg", "../image/goods8_min02.jpg", "../image/goods8_min03.jpg", "../image/goods8_min04.jpg","../image/goods8_min05.jpg","../image/goods8_min06.jpg","../image/goods8_min07.jpg","../image/goods8_min08.jpg","../image/goods8_min09.jpg","../image/goods8_min10.jpg"]
     },
     {
+        "goods_id": "8",
         "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
+        "currentPrice": "¥1310",
+        "sourcePrice": "¥4980",
         "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
-    },
-    {
-        "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
-        "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
-    },
-    {
-        "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
-        "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
-    },
-    {
-        "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
-        "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
-    },
-    {
-        "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
-        "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
-    },
-    {
-        "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
-        "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
-    },
-    {
-        "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
-        "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
-    },
-    {
-        "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
-        "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
-    },
-    {
-        "imgUrl": "../image/goods_list08.jpg",
-        "sourcePrice": "¥1310",
-        "currentPrice": "¥4980",
-        "zhe": "2.3折",
-        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械"
+        "max_img": "../image/goods_max08.jpg",
+        "description": "【爆款】勋章系列夜光男士机械手表时尚防水男表男士机械",
+        "detail_imgs": ["../image/goods8_min01.jpg", "../image/goods8_min02.jpg", "../image/goods8_min03.jpg", "../image/goods8_min04.jpg","../image/goods8_min05.jpg","../image/goods8_min06.jpg","../image/goods8_min07.jpg","../image/goods8_min08.jpg","../image/goods8_min09.jpg","../image/goods8_min10.jpg"]
     }
+    
 ]

@@ -162,4 +162,38 @@ $(function(){
             $('.detail_good_goods').css({'display': 'block'});
         }
     })
+
+    // 数据动态渲染
+    var url = window.location.href;
+    var goods_id = url.split('?')[1].split('=')[1];
+    $.ajax({
+        url: '../data/goods.json',
+        type: 'get',
+        dataType: 'json',
+        success: function(json){
+
+            for(var j=0,len=json.length;j<len;j++){
+                var item = json[j];
+                if(item.goods_id === goods_id){
+                    $('.min_box img').prop('src', item.max_img);
+                    $('.max_box img').prop('src', item.max_img);
+                    var imgs_str = '';
+                    for(var i=0,len=item.detail_imgs.length;i<len;i++){
+                        imgs_str += `
+                        <div><img src="${item.detail_imgs[i]}" alt=""></div>
+                        `;
+                    }
+                    var text_str = `
+                    <i>¥</i><span>${item.currentPrice.slice(1)}</span><b>${item.sourcePrice}</b><strong>${item.zhe}</strong>
+                    `;
+                    $('.detail_r h2').text(item.description);
+                    $('.det_r_price div').html(text_str);
+                    $('.detl_Scr_Wrap>div').html(imgs_str);
+                    break;
+                }
+            }
+
+        }
+    })
+
 })

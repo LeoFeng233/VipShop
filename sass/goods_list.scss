@@ -5,7 +5,6 @@
     margin: 0 auto;
     color: #333333;
     padding-top: 15px;
-    // background-color: pink;
     .goods_list_nav{
         border: 1px solid #cccccc; 
         position: relative;
@@ -29,15 +28,18 @@
             h2{
                 font-size: 12px;
                 float: left;
-                height: 50px;
                 span{
                     width: 700px;
                     float: left;
-                    overflow: hidden;
+                    height: 50px;
+                    overflow-y: hidden;
+                    p{
+                        height: 126px;
+                    }
                     a{
                         float: left;
                         color: #333333;
-                        margin-right: 50px;
+                        margin: 0 50px 20px 0;
                     }
     
                 }
@@ -160,16 +162,28 @@
     .goods_list_container{
         width: 1000px;
         margin-top: 20px;
-        overflow: hidden;
         .goods_container{
-            width: 1100px;
-            overflow: hidden;
+            width: 1100px;  
+            a{
+                float: left;
+            }          
             div{
                 float: left;
                 margin: 0 20px 20px 0;
                 width: 233px;
                 height: 355px;
                 border: 1px solid #ccc;
+                position: relative;
+                &:hover{
+                    border-color: transparent;
+                }
+                &:hover::before{
+                    content: '';
+                    position: absolute;
+                    border: 1px solid #f10180;
+                    left: -10px; top: -10px;
+                    right: -10px; bottom: -10px;
+                }
                 img{
                     width: 233px;
                     height: 235px;
@@ -212,7 +226,8 @@
         .page_number{
             width: 1000px;
             height: 46px;
-            margin: 100px auto 0;
+            overflow: hidden;
+            margin: 100px auto 40px;
             em{
                 float: left;
                 color: #333333;
@@ -224,6 +239,11 @@
                 border-color: #f10180;
                 color: #fff;
             }
+            .back_color{
+                background-color: #fcf5f7;
+                color: #f10180;
+                border-color: #ffbde0;
+            }
             span{
                 float: left;
                 width: 44px;
@@ -233,12 +253,10 @@
                 text-align: center;
                 border-radius: 3px;
                 color: #848585;
-                margin: 2px;
-                &:hover{
-                    border-color: #f10180;
-                    cursor: pointer;
-                }                
+                margin-right: 2px;
+                cursor: pointer;         
             }            
         }
     }
 }
+@import './footer';

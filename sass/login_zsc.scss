@@ -1,9 +1,8 @@
 @import './reset.scss';
-
-html,body{
-    height: 100%;
-    width: 100%;
+body{
+    font-family: tahoma;
 }
+// 头部
 .login_top{
     width: 1000px;
     height: 100px;
@@ -26,157 +25,318 @@ html,body{
         background-size: 304px 202px;
     }
 }
+// 主体部分
 .login_wrap{
     width: 100%;
     height: 650px;
     background: url('../image/login_bg.jpg') no-repeat;
-    background-position-x: -250px;
-    .login_div{
-        width: 1000px;
-        margin: 0 auto;
-        padding: 50px 20px;
-        height: calc(100% - 100px);        
-    }
-    .login_content{
-        width: 360px;
-        border-radius: 2px;
-        float: right;
-        background-color: #fff;
-        border: 1px solid #ccc;
+    background-position-x: -250px;    
+}
+.login_contain{
+    width: 1000px;
+    height: 550px;
+    padding: 50px 20px;
+    margin: 0 auto;
+
+}
+.login_form{
+    width: 360px;
+    float: right;
+    font-family: tahoma;
+    border-radius: 4px;
+    background-color: #fff;
+    .login_nav{
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 18px;
+        color: #666666;        
+        border-bottom: 1px solid #ccc;
         div{
-            border-bottom: 1px solid #ccc;
+            float: left;
+            width: 180px;
             height: 50px;
-            font: 18px/50px tahoma;
-            span{
-                float: left;
-                width: 180px;
-                height: 50px;
-                text-align: center;
-            }
-            span:first-child::after{
-                content: '';
-                display: block;
-                width: 1px;
-                height: 20px;
-                background-color: #ccc;
-                position: absolute;
-                right: 0;top: 15px;
-            }
-            span:first-child{
-                color: #f10180;
-                position: relative;
-            }
-            span:hover{
-                color: #f10180;
-                cursor: pointer;
+            cursor: pointer;
+            &:hover{
+                color: #f10180 !important;
             }
         }
+        div:first-child{
+            position: relative;
+            color: #f10180;
+        }
+        div:first-child::after{
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 20px;
+            right: 0;
+            top: 15px;
+            background-color: #ccc;
+            
+        }
+    }
+    // 扫码登录
+    .login_scan{
+        display: block;
+        padding-top: 36px;
         .login_ma{
-            border: none;
-            margin-top: 36px;
-            height: 172px;
-            padding: 10px 0;
-            p{
+            overflow: hidden;
+            height: 192px;
+            position: relative;
+            div{
+                position: absolute;
+                z-index: 100;
+                left: 94px;top: 10px;
                 width: 150px;
                 height: 150px;
                 padding: 10px;
+                background-color: #fff;
                 border: 1px solid #ccc;
-                margin: 0 auto;
                 img{
                     width: 150px;
                     height: 150px;
                 }
-            }
+            }  
+            h2{
+                display: none;
+                position: absolute;
+                left: 210px;top: 0;                
+                background-color: tomato;
+                width: 120px;
+                height: 192px;
+                opacity: 0;
+                background: url('../image/jingling6.png') no-repeat;
+                background-position: 0 -104px;
+            }  
         }
-        h2{
-            font-size: 12px;
+        p{
             color: #333333;
-            margin-top: 20px;
+            text-align: center;
+            margin-top: 20px;    
+            line-height: 16px;        
+            span{
+                color: #f10180;
+                cursor: pointer;
+            }
             em{
-                float: left;
+                display: inline-block;
                 width: 16px;
-                height: 16px;                
-                margin: 0 6px 0 65px;
+                height: 16px;
+                background-color: pink;
+                margin-right: 6px;
+                vertical-align: top;
                 background: url('../image/jingling6.png') no-repeat;
                 background-position: -605px -121px;
             }
-            span{
-                color: #f10180;
+        }
+    }
+    // 账户登录
+    .login_accout{
+        display: none;
+        width: 300px;
+        margin: 0 auto;
+        overflow: hidden;
+        div{
+            position: relative;
+            height: 32px;
+            padding: 6px 10px 6px 40px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin: 26px 0;
+            input{
+                border: none;
+                padding: 0;
+                width: 250px;
+                height: 32px;            
             }
         }
-        .login_method{
-            width: 300px;
-            height: 40px;
-            padding: 30px 0 15px;
-            margin: 0 auto;
-            position: relative;
-            border: none;
-            .line{
+        .accout{
+            margin-top: 40px;
+            &::before{
+                content: '';
+                width: 20px;
+                height: 20px;
                 position: absolute;
-                width: 300px;
-                height: 1px;
-                left: 0;top: 50px;
-                background-color: #e0e0e0;
+                left: 10px;
+                top: 11px;                
+                background: url('../image/jingling6.png') no-repeat;
+                background-position: -504px -221px;
             }
-            p{
-                position: relative;
-                width: 60px;
+        }
+        .pass{
+            &::before{
+                content: '';
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 10px;
+                top: 11px;                
+                background: url('../image/jingling6.png') no-repeat;
+                background-position: -528px -221px;
+            }
+        }
+        p{
+            overflow: hidden;
+            padding-bottom: 22px;
+            span{
+                float: left;
+                line-height: 14px;
+                font-size: 14px;
+                cursor: pointer;
+                &:hover{
+                    color: #f10180;
+                }
+            }
+            em{
+                float: right;                
+                cursor: pointer;
+                &:hover{
+                    color: #f10180;
+                }
+            }
+        }
+        .login_click{
+            height: 44px;
+            border-radius: 4px;
+            line-height: 44px;
+            font-size: 18px;
+            color: #fff;
+            cursor: pointer;
+            background-color: #f43499;
+            text-align: center;
+            transition: opacity 0.5s;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+
+
+    .login_method{        
+        width: 300px;
+        padding: 30px 0 15px;
+        margin: 0 auto;
+        .line_wrap{
+            margin-bottom: 10px;
+            position: relative;
+            height: 40px;
+            h3{
+                position: absolute;                
+                left: 0;top: 20px;
+                height: 1px;
+                width: 100%;
+                background-color: #ccc;
+            }
+            div{
+                width: 40px;
+                padding: 0 10px;
                 height: 40px;
+                position: absolute;
+                left: 50%;
+                margin-left: -30px;
                 background-color: #fff;
-                margin: 0 auto;
-                i{
-                    float: left;
-                    margin-left: 10px;
-                    width: 40px;
-                    height: 40px;
+                h1{
+                    height: 100%;
                     background: url('../image/jingling6.png') no-repeat;
                     background-position: -580px -161px;
-
                 }
-            }            
+            }
         }
-        h5{
-            font-size: 12px;
-            color: #333333;
-            margin-left: 30px;
-            width: 310px;
+        .method{
             height: 24px;
             line-height: 24px;
-            margin-bottom: 15px;
+            overflow: hidden;
             a{
                 float: left;
-                color: #333333;
                 padding: 0 10px;
+                color: #333333;
                 position: relative;
             }
-            a:nth-child(1){
+            a:first-child{
                 color: #999999;
+            }
+            a:nth-child(n+2):hover{
+                color: #f10180;
             }
             a:nth-child(-n+2)::after{
                 content: '';
-                display: block;
-                position: absolute;
-                right: 0;top: 8px;
                 width: 1px;
                 height: 10px;
                 background-color: #ccc;
+                position: absolute;
+                top: 9px;right: 0;
             }
             span{
                 float: left;
-                margin-left: 20px;
                 color: #999999;
+                width: 45px;
+                margin-left: 20px;
                 cursor: pointer;
+                text-align: center;
+                &:hover{
+                    color: #333333;
+                }
             }
-            strong{
+            b{
                 float: left;
-                font-size: 14px;
-                margin-left: 28px;
+                width: 56px;
                 cursor: pointer;
+                font-size: 14px;
+                margin-left: 18px;
+                &:hover{
+                    color: #f10180;
+                }
+            }
+        }
+        .hidden_begin{
+            display: none;
+            padding-top: 10px;
+            ul{
+                margin-left: -10px;
+                overflow: hidden;
+                li{
+                    float: left;
+                    width: 66px;
+                    height: 18px;
+                    text-align: center;
+                    position: relative;
+                    &:nth-child(-n+3)::after{
+                        content: '';
+                        width: 1px;
+                        height: 10px;
+                        position: absolute;
+                        right: 0;
+                        top: 4px;
+                        background-color: #ccc;
+                    }
+                    a{
+                        color: #333333;
+                        &:hover{
+                            color: #f10180;
+                        }
+                    }
+                }
+            }
+            p{
+                margin-top: 8px;
+                color: #999999;
+                width: 300px;
+                margin-left: 10px;
+                height: 18px;                
+                span{
+                    float: left;            
+                    width: 12px;
+                    height: 12px;
+                    margin: 3px 6px 0 0;
+                    background: url('../image/jingling6.png');
+                    background-position: -536px -205px;
+                }
             }
         }
     }
 }
-
+// 底部
 .login_bottom{
     width: 1000px;
     height: 78px;

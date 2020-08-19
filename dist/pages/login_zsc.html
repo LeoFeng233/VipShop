@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登录页面</title>    
+    <title>登录</title>
     <link rel="stylesheet" href="../css/login_zsc.css">
 </head>
 <body>
@@ -13,35 +13,69 @@
             
         </div>
     </div>
+
     <div class="login_wrap">
-        <div class="login_div">
-            <div class="login_content">
-                <div>
-                    <span>扫码登录</span>
-                    <span>账户登录</span>
+        <div class="login_contain">
+            <div class="login_form">
+                <div class="login_nav">
+                    <div>扫码登录</div>
+                    <div>账户登录</div>
                 </div>
-                <div class="login_ma">
+                <!-- 扫码登录 -->
+                <div class="login_scan">
+                    <div class="login_ma">
+                        <div>
+                            <img src="../image/login_ma.png" alt="">
+                        </div>
+                        <h2></h2>
+                    </div>
+                    <p><em></em>打开<span>唯品会APP-个人中心</span>，扫一扫登录</p>
+                </div>
+                <!-- 账户登录 -->
+                <div class="login_accout">
+                    <div class="accout">
+                        <input type="text" placeholder="手机号/用户名/邮箱">
+                    </div>
+                    <div class="pass">
+                        <input type="text" placeholder="密码">
+                    </div>
                     <p>
-                        <img src="../image/login_ma.png" alt="">
+                        <span>短信验证码</span>
+                        <em>忘记密码</em>
                     </p>
+                    <h1 class="login_click">登录</h1>
                 </div>
-                <h2><em></em>打开<span>唯品会APP-个人中心</span>，扫一扫登录</h2>
                 <div class="login_method">
-                    <div class="line"></div>
-                    <p><i></i></p>
+                    <div class="line_wrap">
+                        <h3></h3>
+                        <div><h1></h1></div>
+                    </div>
+                    <div class="method">
+                        <a href="">新浪微博</a>
+                        <a href="">QQ</a>
+                        <a href="">支付宝</a>
+                        <span>更多 v</span>
+                        <b>免费注册</b>
+                    </div>
+                    <div class="hidden_begin">
+                        <ul>
+                            <li><a href="">网 易</a></li>
+                            <li><a href="">人人网</a></li>
+                            <li><a href="">开心网</a></li>
+                            <li><a href="">翼支付</a></li>
+                        </ul>
+                        <p><span></span>关于建行、中国移动登录失效通知，请查看</p>
+                    </div>
                 </div>
-                <h5>
-                    <a href="">新浪微博</a>
-                    <a href="">QQ</a>
-                    <a href="">支付宝</a>
-                    <span>更多 &nbsp;&nbsp;v</span>
-                    <strong>免费注册</strong>
-                </h5>
             </div>
         </div>
     </div>
+
+
     <div class="login_bottom">
         Copyright 2008-2020 vip.com，All Rights Reserved ICP证：粤 B2-20080329
     </div>
+    <script src="../script/jquery-2.1.4.js"></script>
+    <script src="../script/login_zsc.js"></script>
 </body>
 </html>

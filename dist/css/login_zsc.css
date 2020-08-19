@@ -93,10 +93,10 @@ body {
     background-size: 304px 202px; }
 
 .login_wrap {
-  width: 100%;
+  min-width: 1000px;
   height: 650px;
   background: url("../image/login_bg.jpg") no-repeat;
-  background-position-x: -250px; }
+  background-position: center top; }
 
 .login_contain {
   width: 1000px;

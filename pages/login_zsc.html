@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录</title>
     <link rel="stylesheet" href="../css/login_zsc.css">
 </head>
+
 <body>
     <div class="login_top">
         <a href=""></a>
         <div>
-            
+
         </div>
     </div>
 
@@ -34,10 +36,10 @@
                 <!-- 账户登录 -->
                 <div class="login_accout">
                     <div class="accout">
-                        <input type="text" placeholder="手机号/用户名/邮箱">
+                        <input type="text" id="username" placeholder="手机号/用户名/邮箱">
                     </div>
                     <div class="pass">
-                        <input type="text" placeholder="密码">
+                        <input type="password" id="password" placeholder="密码">
                     </div>
                     <p>
                         <span>短信验证码</span>
@@ -48,7 +50,9 @@
                 <div class="login_method">
                     <div class="line_wrap">
                         <h3></h3>
-                        <div><h1></h1></div>
+                        <div>
+                            <h1></h1>
+                        </div>
                     </div>
                     <div class="method">
                         <a href="">新浪微博</a>
@@ -77,5 +81,7 @@
     </div>
     <script src="../script/jquery-2.1.4.js"></script>
     <script src="../script/login_zsc.js"></script>
+    <script type="module" src="../script/login/login.js"></script>
 </body>
+
 </html>

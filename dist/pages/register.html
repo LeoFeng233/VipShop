@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+
+<body>
+    <div class="reg-header">
+        <div class="reg-header-inner">
+            <div class="f-left logo">
+                <a href="javascript:void(0)">
+                </a>
+            </div>
+
+            <div class="f-right goods-service"></div>
+        </div>
+    </div>
+
+    <div class="reg-body">
+        <div class="reg-content clearfix">
+            <div class="reg-box f-right">
+                <div class="reg-box-title">
+                    <div class="reg-switch-login f-right">
+                        已注册可
+                        <a href="javascript:void(0)">直接登录</a>
+                    </div>
+                    <h3>会员注册</h3>
+                </div>
+                <div class="reg-box-body">
+                    <form action="#" class="reg-form">
+                        <div class="form-item mobile-phone-item">
+                            <div class="input-group">
+                                <input class="long-input-item" autocomplete="off" id="mobilePhoneInput" type="text"
+                                    placeholder="请输入手机号">
+                                <i class="vipFont mobile-icon input-icon">&#xe615;</i>
+                                <i class="vipFont input-success input-msg">&#xe683;</i>
+                                <i class="vipFont input-wrong input-msg">&#xe8b8;</i>
+                            </div>
+                            <div class="input-tip">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="form-item password-input-item">
+                            <div class="input-group">
+                                <input class="long-input-item" id="passwordInput" type="password"
+                                    placeholder="密码由8-20位字母，数字和符号组合">
+                                <i class="vipFont mobile-icon input-icon">&#xe66c;</i>
+                                <i class="vipFont input-success input-msg">&#xe683;</i>
+                                <i class="vipFont input-wrong input-msg">&#xe8b8;</i>
+                            </div>
+                            <div class="input-tip">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="form-item password-again-item">
+                            <div class="input-group">
+                                <input class="long-input-item" id="passwordAgain" type="password"
+                                    placeholder="请再次输入上面的密码">
+                                <i class="vipFont mobile-icon input-icon">&#xe66c;</i>
+                                <i class="vipFont input-success input-msg">&#xe683;</i>
+                                <i class="vipFont input-wrong input-msg">&#xe8b8;</i>
+                            </div>
+                            <div class="input-tip">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="form-item agree-check-item">
+                            <div class="input-group">
+                                <span class="input-checkbox">
+                                    <input type="checkbox" id="mobileAgress" class="checkbox-normal">
+                                    <label for="mobileAgress" class="checkbox-simulation"></label>
+                                </span>
+                                <label for="mobileAgress" class="mobile-agree-msg">
+                                    我已阅读并接受以下条款：
+                                    <a href="javascript:void(0)" class="agree-link">《唯品会服务条款》</a>
+                                    <a href="javascript:void(0)" class="agree-link">《隐私条款》</a>
+                                    <a href="javascript:void(0)" class="agree-link">《唯品支付用户服务协议》</a>
+                                </label>
+                            </div>
+                            <div class="input-tip">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="form-item clearfix form-submit">
+                            <a href="javascript:;" id="regFormSubmit" class="reg-submit-button">立即注册</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reg-footer">
+        <p class="reg-copyright">Copyright 2008-2020 vip.com，All Rights Reserved ICP证：粤 B2-20080329</p>
+    </div>
+
+
+    <script type="module" src="../script/register/RegisterCheck.js"></script>
+</body>
+
+</html>

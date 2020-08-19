@@ -65,6 +65,125 @@
     }
 }
 
+.login-or-regist-box {
+    float: left;
+}
+
+.online-btn {
+    position: relative;
+    float: left;
+    text-align: right;
+    padding-right: 15px;
+    line-height: 27px;
+    display: none;
+
+    .online-inner {
+        position: relative;
+        z-index: 120;
+    }
+
+    .vip-link {
+        vertical-align: middle;
+
+        .vip-level-l1 {
+            background-image: url(../image/sprites-hash-06206acd.png);
+            background-position: -255px -104px;
+            width: 26px;
+            height: 26px;
+            display: inline-block;
+        }
+    }
+
+    .user-name {
+        vertical-align: top;
+    }
+
+    .online-info {
+        display: none;
+
+        .title-box {
+            display: block;
+            position: absolute;
+            background-color: #fff;
+            width: 136px;
+            height: 28px;
+            border: 1px solid #ccc;
+            top: 0px;
+            left: -12px;
+            z-index: 110;
+            border-bottom-color: #fff;
+
+        }
+
+        .online-info-content {
+            position: absolute;
+            width: 280px;
+            height: 137px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            left: -12px;
+            top: 29px;
+            z-index: 100;
+            padding: 14px 0 10px 0;
+
+            .user-avator-info {
+                padding: 0 20px;
+
+                .user-avator {
+                    float: left;
+                    background-image: url(../image/sprites-hash-06206acd.png);
+                    background-position: -164px -142px;
+                    width: 38px;
+                    height: 38px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+
+                .user-name-info {
+                    float: left;
+                    padding-left: 5px;
+
+                    border-bottom: 1px dotted #ccc;
+                    width: 175px;
+                    text-align: left;
+                    height: 32px;
+                    line-height: 32px;
+                }
+
+                .exit-login {
+                    float: right;
+                }
+            }
+
+            .user-action {
+                display: block;
+                margin: 10px 12px;
+                padding-left: 15px;
+
+                li {
+                    float: left;
+                    width: 120px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+.logined {
+    .login-or-regist-box {
+        display: none;
+    }
+
+    .online-btn {
+        display: block;
+    }
+}
+
+.hover .online-info {
+    display: block;
+}
+
 .header-inner {
     width: 1000px;
     margin: auto;
@@ -156,6 +275,7 @@
                 background-color: #fff;
                 top: 28px;
                 left: -194px;
+                z-index: 1;
 
                 .check-in-gift-msg {
                     color: #666;
@@ -396,9 +516,20 @@
     }
 }
 
+.scroll-over-nav .goods-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 #a7a7a7;
+}
+
 .goods-nav {
+    width: 100%;
     height: 43px;
     font-size: 16px;
+    position: relative;
 
     .goods-nav-list {
 

@@ -8,4 +8,8 @@ ItemHover.factory({
     hoverBox: ".check-in"
 });
 
+ItemHover.factory({
+    hoverBox: ".online-btn"
+});
+
 AllCateHover.factory();

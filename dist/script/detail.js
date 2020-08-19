@@ -165,7 +165,11 @@ $(function(){
 
     // 数据动态渲染
     var url = window.location.href;
-    var goods_id = url.split('?')[1].split('=')[1];
+    try {
+        var goods_id = url.split('?')[1].split('=')[1];
+    } catch (error) {
+        console.log('直接访问详情页。。。。。。。微臣用try catch捕获了！');
+    }
     $.ajax({
         url: '../data/goods.json',
         type: 'get',

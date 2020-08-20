@@ -28,13 +28,15 @@
     .operation-adv .adv-inner {
       width: 1170px; }
       .operation-adv .adv-inner .adv-content li {
-        width: 378px; }
+        width: 378px;
+        margin: 0 18px 18px 0; }
   .daily-see .see-inner {
     width: 1170px; }
     .daily-see .see-inner .see-content .content-part1-col1 .col1-all-bg {
       width: 600px; }
     .daily-see .see-inner .see-content .content-part1-col2 .col2-all-bg {
-      width: 570px; }
+      width: 570px;
+      height: 342px; }
   .sp-sale .sp-sale-inner {
     width: 1170px; }
     .sp-sale .sp-sale-inner .sp-sale-title {
@@ -120,7 +122,7 @@
     .adv-inner .adv-content ul li {
       float: left;
       width: 328px;
-      margin: 0 18px 18px 0; }
+      margin: 0 8px 8px 0; }
       .adv-inner .adv-content ul li:nth-child(3n) {
         margin-right: 0; }
       .adv-inner .adv-content ul li a {
@@ -134,6 +136,53 @@
 .daily-see {
   margin-bottom: 20px;
   padding-bottom: 20px; }
+
+@media screen and (min-width: 1441px) {
+  .daily-see .see-inner .see-content .part1-li ul {
+    left: 21px;
+    top: 76px; }
+    .daily-see .see-inner .see-content .part1-li ul li {
+      width: 170px; }
+  .daily-see .see-inner .see-content .content-part1-col1 .logo-and-rest-num {
+    left: 24px;
+    top: 132px;
+    width: 122px;
+    height: 72px; }
+    .daily-see .see-inner .see-content .content-part1-col1 .logo-and-rest-num img {
+      width: 80px;
+      margin: 8px 0 0 21px; }
+  .daily-see .see-inner .see-content .content-part1-col1 .panic-buy-logo {
+    width: 50px;
+    margin: 10px 0 0 36px; }
+  .daily-see .see-inner .see-content .content-part1-col2 .col2-tag {
+    width: 120px;
+    top: 184px;
+    left: 25px; }
+  .daily-see .see-inner .see-content .content-part1-col2 .col2-kind-name {
+    font-size: 16px; }
+  .daily-see .see-inner .see-content .see-content-part2 ul {
+    top: 105px;
+    left: 25px; }
+    .daily-see .see-inner .see-content .see-content-part2 ul li {
+      margin-right: 20px;
+      width: 170px; }
+      .daily-see .see-inner .see-content .see-content-part2 ul li .fast-buy-brand {
+        top: 140px;
+        left: 35px;
+        width: 98px;
+        height: 58px; }
+        .daily-see .see-inner .see-content .see-content-part2 ul li .fast-buy-brand img {
+          border: none;
+          display: block;
+          width: 80px;
+          margin: 9px auto; }
+      .daily-see .see-inner .see-content .see-content-part2 ul li .part2-fast-buy-tag {
+        width: 40px;
+        margin-top: 41px;
+        margin-left: 35px; }
+      .daily-see .see-inner .see-content .see-content-part2 ul li .part2-fast-buy-price {
+        margin-top: 41px;
+        margin-left: 5px; } }
 
 .see-inner {
   width: 1000px;
@@ -151,10 +200,10 @@
     .see-inner .see-content .part1-li ul {
       display: block;
       position: absolute;
-      left: 21px;
-      top: 76px; }
+      left: 17px;
+      top: 60px; }
       .see-inner .see-content .part1-li ul li {
-        width: 170px;
+        width: 146px;
         float: left;
         margin-right: 8px;
         position: relative; }
@@ -165,26 +214,29 @@
     float: left;
     width: 510px; }
   .see-inner .see-content .content-part1-col1 .panic-buy-bg {
-    width: 170px; }
+    width: 100%; }
   .see-inner .see-content .content-part1-col1 .panic-buy-logo {
-    width: 50px;
-    margin: 10px 0 0 36px; }
+    margin: 10px 0 0 29px;
+    width: 40px;
+    float: left; }
   .see-inner .see-content .content-part1-col1 .price-content {
-    display: inline-block;
+    float: left;
     font-size: 16px;
     margin-top: 8px;
-    color: #222; }
+    margin-left: 4px;
+    color: #222;
+    line-height: 18px; }
   .see-inner .see-content .content-part1-col1 .logo-and-rest-num {
     position: absolute;
-    left: 24px;
-    top: 132px;
-    width: 122px;
-    height: 72px;
+    left: 21px;
+    top: 113px;
+    width: 104px;
+    height: 64px;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.8); }
     .see-inner .see-content .content-part1-col1 .logo-and-rest-num img {
-      width: 80px;
-      margin: 8px 0 0 21px; }
+      width: 70px;
+      margin: 6px 0 0 17px; }
     .see-inner .see-content .content-part1-col1 .logo-and-rest-num .rest-num {
       width: 100%;
       position: absolute;
@@ -197,24 +249,27 @@
       max-width: 100%;
       max-height: 18px;
       overflow: hidden; }
+  .see-inner .see-content .content-part1-col2 .col2-all-bg {
+    width: 490px;
+    height: 290px; }
   .see-inner .see-content .content-part1-col2 .col2-el-bg {
-    width: 170px;
+    width: 100%;
     display: block; }
   .see-inner .see-content .content-part1-col2 .col2-panic-buy-bg {
-    width: 170px;
+    width: 100%;
     position: absolute;
     display: block;
     top: 0;
     left: 0; }
   .see-inner .see-content .content-part1-col2 .col2-tag {
-    width: 120px;
+    width: 103px;
     position: absolute;
     display: block;
-    top: 184px;
-    left: 25px; }
+    top: 156px;
+    left: 22px; }
   .see-inner .see-content .content-part1-col2 .col2-kind-name {
     display: block;
-    font-size: 16px;
+    font-size: 14px;
     width: 100%;
     text-align: center;
     position: absolute;
@@ -223,34 +278,35 @@
   .see-inner .see-content .see-content-part2 .part2-all-bg {
     width: 100%; }
   .see-inner .see-content .see-content-part2 ul {
-    top: 105px;
-    left: 24px; }
+    top: 83px;
+    left: 20px; }
     .see-inner .see-content .see-content-part2 ul li {
-      margin-right: 20px; }
+      margin-right: 18px;
+      width: 145px; }
       .see-inner .see-content .see-content-part2 ul li .fast-buy-brand {
         position: absolute;
-        top: 140px;
-        left: 35px;
-        width: 98px;
-        height: 58px;
+        top: 120px;
+        left: 30px;
+        width: 84px;
+        height: 50px;
         border: 1px solid #ccc;
         background-color: #fff; }
         .see-inner .see-content .see-content-part2 ul li .fast-buy-brand img {
           border: none;
           display: block;
-          width: 80px;
-          margin: 9px auto; }
+          width: 70px;
+          margin: 7px auto; }
       .see-inner .see-content .see-content-part2 ul li .part2-fast-buy-bg {
-        width: 170px; }
+        width: 100%; }
       .see-inner .see-content .see-content-part2 ul li .part2-fast-buy-tag {
         float: left;
         width: 50px;
         clear: both;
-        margin-top: 41px;
-        margin-left: 35px; }
+        margin-top: 36px;
+        margin-left: 30px; }
       .see-inner .see-content .see-content-part2 ul li .part2-fast-buy-price {
-        margin-top: 41px;
-        margin-left: 5px;
+        margin-top: 36px;
+        margin-left: 4px;
         float: left;
         font-size: 14px;
         color: #222; }
@@ -260,7 +316,8 @@
   margin: 0 auto 20px; }
   .sp-sale-inner .sp-sale-title {
     width: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    margin: 0 auto 20px; }
     .sp-sale-inner .sp-sale-title img {
       float: left;
       width: 100%; }

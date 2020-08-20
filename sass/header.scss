@@ -351,12 +351,54 @@
             .info-content {
                 position: absolute;
                 width: 280px;
-                height: 175px;
+                height: 137px;
                 top: -3px;
                 left: -15px;
                 background-color: #fff;
                 border: 1px solid #ccc;
                 z-index: 103;
+                padding: 14px 0 10px 0;
+
+                .user-avator-info {
+                    padding: 0 20px;
+
+                    .user-avator {
+                        float: left;
+                        background-image: url(../image/sprites-hash-06206acd.png);
+                        background-position: -164px -142px;
+                        width: 38px;
+                        height: 38px;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                    }
+
+                    .user-name-info {
+                        float: left;
+                        padding-left: 5px;
+
+                        border-bottom: 1px dotted #ccc;
+                        width: 175px;
+                        text-align: left;
+                        height: 32px;
+                        line-height: 32px;
+                    }
+
+                    .exit-login {
+                        float: right;
+                    }
+                }
+
+                .user-action {
+                    display: block;
+                    margin: 10px 12px;
+                    padding-left: 15px;
+
+                    li {
+                        float: left;
+                        width: 120px;
+                        text-align: left;
+                    }
+                }
             }
         }
     }

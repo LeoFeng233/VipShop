@@ -53,6 +53,7 @@
 
             .adv-content li {
                 width: 378px;
+                margin: 0 18px 18px 0;
             }
         }
     }
@@ -71,6 +72,7 @@
                 .content-part1-col2 {
                     .col2-all-bg {
                         width: 570px;
+                        height: 342px;
                     }
                 }
             }
@@ -205,7 +207,7 @@
             li {
                 float: left;
                 width: 328px;
-                margin: 0 18px 18px 0;
+                margin: 0 8px 8px 0;
 
                 &:nth-child(3n) {
                     margin-right: 0;
@@ -231,6 +233,96 @@
     padding-bottom: 20px;
 }
 
+@media screen and (min-width: 1441px) {
+    .daily-see {
+        .see-inner {
+            .see-content {
+                .part1-li {
+                    ul {
+                        left: 21px;
+                        top: 76px;
+
+                        li {
+                            width: 170px;
+                        }
+                    }
+                }
+
+                .content-part1-col1 {
+
+
+                    .logo-and-rest-num {
+                        left: 24px;
+                        top: 132px;
+                        width: 122px;
+                        height: 72px;
+
+                        img {
+                            width: 80px;
+                            margin: 8px 0 0 21px;
+                        }
+                    }
+
+
+                    .panic-buy-logo {
+                        width: 50px;
+                        margin: 10px 0 0 36px;
+                    }
+                }
+
+                .content-part1-col2 {
+                    .col2-tag {
+                        width: 120px;
+                        top: 184px;
+                        left: 25px;
+                    }
+
+                    .col2-kind-name {
+                        font-size: 16px;
+                    }
+                }
+
+                .see-content-part2 {
+                    ul {
+                        top: 105px;
+                        left: 25px;
+
+                        li {
+                            margin-right: 20px;
+                            width: 170px;
+
+                            .fast-buy-brand {
+                                top: 140px;
+                                left: 35px;
+                                width: 98px;
+                                height: 58px;
+
+                                img {
+                                    border: none;
+                                    display: block;
+                                    width: 80px;
+                                    margin: 9px auto;
+                                }
+                            }
+
+                            .part2-fast-buy-tag {
+                                width: 40px;
+                                margin-top: 41px;
+                                margin-left: 35px;
+                            }
+
+                            .part2-fast-buy-price {
+                                margin-top: 41px;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .see-inner {
     width: 1000px;
     margin: 0 auto;
@@ -254,11 +346,11 @@
             ul {
                 display: block;
                 position: absolute;
-                left: 21px;
-                top: 76px;
+                left: 17px;
+                top: 60px;
 
                 li {
-                    width: 170px;
+                    width: 146px;
                     float: left;
                     margin-right: 8px;
                     position: relative;
@@ -278,33 +370,38 @@
             }
 
             .panic-buy-bg {
-                width: 170px;
+                width: 100%;
             }
 
             .panic-buy-logo {
-                width: 50px;
-                margin: 10px 0 0 36px;
+                margin: 10px 0 0 29px;
+                width: 40px;
+                float: left;
             }
 
             .price-content {
-                display: inline-block;
+                float: left;
                 font-size: 16px;
                 margin-top: 8px;
+                margin-left: 4px;
                 color: #222;
+                line-height: 18px;
             }
 
             .logo-and-rest-num {
                 position: absolute;
-                left: 24px;
-                top: 132px;
-                width: 122px;
-                height: 72px;
+                left: 21px;
+                top: 113px;
+
+                width: 104px;
+                height: 64px;
                 border-radius: 4px;
                 background-color: rgba(255, 255, 255, 0.8);
 
                 img {
-                    width: 80px;
-                    margin: 8px 0 0 21px;
+
+                    width: 70px;
+                    margin: 6px 0 0 17px;
                 }
 
                 .rest-num {
@@ -325,13 +422,18 @@
         }
 
         .content-part1-col2 {
+            .col2-all-bg {
+                width: 490px;
+                height: 290px;
+            }
+
             .col2-el-bg {
-                width: 170px;
+                width: 100%;
                 display: block;
             }
 
             .col2-panic-buy-bg {
-                width: 170px;
+                width: 100%;
                 position: absolute;
                 display: block;
                 top: 0;
@@ -339,16 +441,16 @@
             }
 
             .col2-tag {
-                width: 120px;
+                width: 103px;
                 position: absolute;
                 display: block;
-                top: 184px;
-                left: 25px;
+                top: 156px;
+                left: 22px;
             }
 
             .col2-kind-name {
                 display: block;
-                font-size: 16px;
+                font-size: 14px;
                 width: 100%;
                 text-align: center;
                 position: absolute;
@@ -363,45 +465,46 @@
             }
 
             ul {
-                top: 105px;
-                left: 24px;
+                top: 83px;
+                left: 20px;
 
                 li {
-                    margin-right: 20px;
+                    margin-right: 18px;
+                    width: 145px;
 
                     .fast-buy-brand {
                         position: absolute;
-                        top: 140px;
-                        left: 35px;
+                        top: 120px;
+                        left: 30px;
                         // margin: -30px;
-                        width: 98px;
-                        height: 58px;
+                        width: 84px;
+                        height: 50px;
                         border: 1px solid #ccc;
                         background-color: #fff;
 
                         img {
                             border: none;
                             display: block;
-                            width: 80px;
-                            margin: 9px auto;
+                            width: 70px;
+                            margin: 7px auto;
                         }
                     }
 
                     .part2-fast-buy-bg {
-                        width: 170px;
+                        width: 100%;
                     }
 
                     .part2-fast-buy-tag {
                         float: left;
                         width: 50px;
                         clear: both;
-                        margin-top: 41px;
-                        margin-left: 35px;
+                        margin-top: 36px;
+                        margin-left: 30px;
                     }
 
                     .part2-fast-buy-price {
-                        margin-top: 41px;
-                        margin-left: 5px;
+                        margin-top: 36px;
+                        margin-left: 4px;
                         float: left;
                         font-size: 14px;
                         color: #222;
@@ -419,6 +522,7 @@
     .sp-sale-title {
         width: 100%;
         overflow: hidden;
+        margin: 0 auto 20px;
 
         img {
             float: left;

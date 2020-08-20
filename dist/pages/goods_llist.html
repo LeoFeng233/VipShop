@@ -1,12 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商品列表页</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/goods_list.css">
 </head>
+
 <body>
+    <div class="header clearfix adapt-open">
+        <div class="top-nav">
+            <div class="header-inner">
+                <div class="part-left">
+                    <span class="area-location">深圳市</span>
+                    <i class="arrow-down"></i>
+                </div>
+
+                <div class="part-right">
+                    <div class="login-box">
+                        <div class="login-or-regist-box">
+                            <div class="item login-btn">
+                                <a href="./login_zsc.html">请登录</a>
+                                <div class="user-info">
+                                    <div class="title-box"></div>
+                                    <div class="info-content">
+                                        <div class="user-avator-info clearfix">
+                                            <a href="javascript:void(0)" class="user-avator"></a>
+                                            <div class="user-name-info">
+                                                <a href="./login_zsc.html">欢迎回来 [请登录]</a>
+                                            </div>
+                                        </div>
+
+                                        <ul class="user-action">
+                                            <li><a href="javascript:void(0)">我的收藏</a></li>
+                                            <li><a href="javascript:void(0)">我的订单</a></li>
+                                            <li><a href="javascript:void(0)">零钱</a></li>
+                                            <li><a href="javascript:void(0)">我的优惠券</a></li>
+                                            <li><a href="javascript:void(0)">我的唯品币</a></li>
+                                            <li><a href="javascript:void(0)">唯品金融</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="sep item"></span>
+                            <div class="item regist-btn">
+                                <a href="./register.html">注册</a>
+                            </div>
+                        </div>
+
+                        <div class="online-btn">
+                            <div class="online-inner">
+                                <a href="javascript:void(0)" class="vip-link">
+                                    <i class="vip-level-l1"></i>
+                                </a>
+
+                                <a href="javascript:void(0)" class="user-name">158*****3</a>
+                                <i class="arrow-down"></i>
+                            </div>
+
+                            <div class="online-info">
+                                <div class="title-box"></div>
+                                <div class="online-info-content">
+                                    <div class="user-avator-info clearfix">
+                                        <a href="javascript:void(0)" class="user-avator"></a>
+                                        <div class="user-name-info">
+                                            <a href="javascript:void(0)" class="user-name">158*****399</a>
+                                            <a href="javascript:;" class="exit-login">[退出]</a>
+                                        </div>
+                                    </div>
+
+                                    <ul class="user-action">
+                                        <li><a href="javascript:void(0)">我的收藏</a></li>
+                                        <li><a href="javascript:void(0)">我的订单</a></li>
+                                        <li><a href="javascript:void(0)">零钱</a></li>
+                                        <li><a href="javascript:void(0)">我的优惠券</a></li>
+                                        <li><a href="javascript:void(0)">我的唯品币</a></li>
+                                        <li><a href="javascript:void(0)">唯品金融</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <span class="sep item"></span>
+                    </div>
+                    <div class="item check-in">
+                        <i class="top-nav-icon"></i>签到有礼
+                        <div class="check-in-info">
+                            <a href="#" class="check-in-gift-msg">连续签到享心动好礼</a>
+                            <a href="#" class="check-in-btn">签到</a>
+                        </div>
+                    </div>
+                    <span class="sep item"></span>
+                    <div class="item my-order">
+                        <a href="#">我的订单</a>
+                    </div>
+                    <span class="sep item"></span>
+                    <div class="item my-sp-sale clearfix">
+                        <a href="#">我的特卖</a>
+                        <i class="arrow-down"></i>
+                    </div><span class="sep item"></span>
+                    <div class="item">
+                        <a href="#">会员俱乐部</a>
+                        <i class="arrow-down"></i>
+                    </div><span class="sep item"></span>
+                    <div class="item">
+                        <a href="#">客户服务</a>
+                        <i class="arrow-down"></i>
+                    </div><span class="sep item"></span>
+                    <div class="item phone-version">
+                        <a href="#">
+                            <i class="top-nav-icon"></i>
+                            手机版</a>
+                    </div><span class="sep item"></span>
+                    <div class="item">
+                        <a href="#">更多</a>
+                        <i class="arrow-down"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-logo">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="#"><img src="../image/logo.png" alt=""></a>
+                </div>
+                <div class="service-list">
+                    <a href="#" class="item"></a>
+                    <a href="#" class="item"></a>
+                    <a href="#" class="item"></a>
+                </div>
+
+                <div class="chart-btn">
+                    <a href="#">
+                        <i></i>
+                        购物车
+                    </a>
+                    <span class="chart-goods-num">0</span>
+                </div>
+
+                <div class="search-box">
+                    <div class="search-form clearfix">
+                        <input type="text">
+                        <a href="#">
+                            <i></i>
+                        </a>
+                    </div>
+                    <div class="search-candidate">
+                        <a href="#" class="item">连衣裙</a><span class="sep item">|</span>
+                        <a href="#" class="item">护肤套装</a><span class="sep item">|</span>
+                        <a href="#" class="item">耐克Nike</a><span class="sep item">|</span>
+                        <a href="#" class="item">女式休闲裤</a><span class="sep item">|</span>
+                        <a href="#" class="item">女休闲鞋</a><span class="sep item">|</span>
+                        <a href="#" class="item">手机</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="goods-nav">
+            <div class="header-inner">
+                <ul class="goods-nav-list">
+                    <li class="main-category">
+                        <a href="#">
+                            <img src="../image/main-category-icon.png" alt="">
+                            商品分类
+                        </a>
+                    </li>
+                    <li><a href="#" class="home-page">首页</a></li>
+                    <li><a href="#">最后疯抢</a></li>
+                    <li><a href="#">唯品快抢</a></li>
+                    <li><a href="#">品牌清仓</a></li>
+                    <li><a href="#">女装</a></li>
+                    <li><a href="#">母婴</a></li>
+                    <li><a href="#">家电</a></li>
+                    <li><a href="#">国际</a></li>
+                    <li><a href="#">美妆</a></li>
+                    <li><a href="#">鞋包</a></li>
+                    <li><a href="#">男装</a></li>
+                    <li><a href="#">更多
+                            <i class="vipFont">&#xe638;</i>
+                        </a></li>
+                </ul>
+
+                <div class="nav-cate-down">
+                    <ul class="all-cate-list">
+                        <li data-name="clothes"><span>女装/男装/内衣</span></li>
+                        <li data-name="shoes"><span>女鞋/男鞋/箱包</span></li>
+                        <li data-name="skinCare"><span>护肤彩妆/个护</span></li>
+                        <li data-name="sports"><span>运动户外</span></li>
+                        <li data-name="appliance"><span>家电数码</span></li>
+                        <li data-name="kids"><span>母婴童装</span></li>
+                        <li data-name="watch"><span>手表配饰</span></li>
+                        <li data-name="furniture"><span>居家用品</span></li>
+                        <li data-name="vipLife"><span>唯品生活</span></li>
+                        <li data-name="vipInternation"><span>唯品国际/唯品奢</span></li>
+                        <li data-name="medicine"><span>医药健康</span></li>
+                    </ul>
+
+                    <div class="cate-panel">
+                        <div class="cate-part">
+                            <div class="cate-part-col1">
+                                <div class="cate-content">
+                                </div>
+                            </div>
+                            <div class="cate-part-col2">
+                                <h4>精品推荐</h4>
+                                <a href="javascript:vodi(0)" class="brand-panel">
+                                    <img src="../image/brandLogos/primary.png" alt="">
+                                    <p>恩裳</p>
+                                </a>
+                                <a href="javascript:vodi(0)" class="brand-panel">
+                                    <img src="../image/brandLogos/primary(1).png" alt="">
+                                    <p>音儿</p>
+                                </a>
+                                <a href="javascript:vodi(0)" class="brand-panel">
+                                    <img src="../image/brandLogos/primary(2).png" alt="">
+                                    <p>波司登</p>
+                                </a>
+                                <a href="javascript:vodi(0)" class="brand-panel">
+                                    <img src="../image/brandLogos/primary(3).png" alt="">
+                                    <p>诗篇</p>
+                                </a>
+                                <a href="javascript:vodi(0)" class="brand-panel">
+                                    <img src="../image/brandLogos/primary(4).png" alt="">
+                                    <p>哥弟</p>
+                                </a>
+                                <a href="javascript:vodi(0)" class="brand-panel">
+                                    <img src="../image/brandLogos/primary(5).png" alt="">
+                                    <p>罗蒙</p>
+                                </a>
+                                <a href="javascript:vodi(0)" class="brand-panel">
+                                    <img src="../image/brandLogos/primary(6).png" alt="">
+                                    <p>富铤</p>
+                                </a>
+                                <a href="javascript:vodi(0)" class="brand-panel">
+                                    <img src="../image/brandLogos/primary(7).png" alt="">
+                                    <p>米皇</p>
+                                </a>
+                                <a href="javascript:vodi(0)" class="brand-panel">
+                                    <img src="../image/brandLogos/primary(8).png" alt="">
+                                    <p>帕罗</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
     <div class="goods_list">
         <div class="goods_list_nav">
             <div>
@@ -208,9 +455,9 @@
                     </span>
                 </h2>
                 <p><span><i>+</i>多选</span></p>
-            </div>    
-            
-            <h3 class="click_open">更多选项 v</h3>        
+            </div>
+
+            <h3 class="click_open">更多选项 v</h3>
         </div>
         <div class="goods_list_filter">
             <ul>
@@ -300,7 +547,7 @@
                     <dt>唯品会APP二维码</dt>
                     <img src="../image/footer_ma.png" alt="">
                     <p>下载唯品会移动APP</p>
-                </dl>                
+                </dl>
             </div>
 
             <div class="footer_aboutus">
@@ -315,9 +562,10 @@
                 <span>联系我们</span>
             </div>
             <p class="footer_text">
-                Copyright © 2008-2020 vip.com，All Rights Reserved  使用本网站即表示接受 唯品会用户协议。版权所有 广州唯品会电子商务有限公司<br>
-粤公网安备 44010302111111号    粤ICP备08114786号 增值业务经营许可证：粤B2-20170777 网络文化经营许可证：粤网文〔2018〕5030-1743号<br>
-经营主体证照   风险监测信息   互联网药品信息服务资格证书：（粤）-经营性-2018-0271 网络食品交易第三方平台备案凭证：粤B2-20170777 医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号
+                Copyright © 2008-2020 vip.com，All Rights Reserved 使用本网站即表示接受 唯品会用户协议。版权所有 广州唯品会电子商务有限公司<br>
+                粤公网安备 44010302111111号 粤ICP备08114786号 增值业务经营许可证：粤B2-20170777 网络文化经营许可证：粤网文〔2018〕5030-1743号<br>
+                经营主体证照 风险监测信息 互联网药品信息服务资格证书：（粤）-经营性-2018-0271 网络食品交易第三方平台备案凭证：粤B2-20170777
+                医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号
             </p>
             <div class="footer_btm">
                 <p>
@@ -333,7 +581,12 @@
         </div>
 
     </div>
+    <script type="module" src="../script/header.js"></script>
     <script src="../script/jquery-2.1.4.js"></script>
     <script src="../script/goods_list.js"></script>
+    <script type="module" src="../script/util/handleCookies.js"></script>
+    <script type="module" src="../script/header/AutoLogin.js"></script>
+    <script type="module" src="../script/header/loadCateList.js"></script>
 </body>
+
 </html>

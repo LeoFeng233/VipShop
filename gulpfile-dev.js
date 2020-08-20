@@ -47,7 +47,7 @@ task('html', async () => {
 })
 // 处理json
 task('data', async () => {
-  src('./data/*.json')
+  src('./data/**/*.json')
     .pipe(dest('./dist/data'))
     .pipe(load.connect.reload())
 })
@@ -64,7 +64,7 @@ task('watch', async () => {
   watch('./sass/*.scss', series('sass'));
   watch('./script/**/*.js', series('script'));
   watch('./pages/*.html', series('html'));
-  watch('./data/*.json', series('data'));
+  watch('./data/**/*.json', series('data'));
   watch(['./lib/**/*.js', './lib/**/*.css'], series('lib'));
 })
 

@@ -51,6 +51,7 @@
 
                 .cate-content dl dd {
                     width: 598px;
+                    max-width: 598px;
                 }
             }
         }
@@ -716,6 +717,7 @@
                     font-weight: bold;
                     position: absolute;
                     line-height: 22px;
+                    overflow: hidden;
 
                     &::after {
                         content: '\e653';
@@ -730,10 +732,13 @@
                     display: inline-block;
                     word-break: keep-all;
                     width: 425px;
+                    max-width: 425px;
+                    overflow: hidden;
 
                     a {
                         margin-right: 10px;
                         line-height: 22px;
+                        word-break: keep-all;
                     }
                 }
             }

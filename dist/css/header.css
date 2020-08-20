@@ -29,7 +29,8 @@
     .nav-cate-down .cate-panel .cate-part-col1 {
       width: 689px; }
       .nav-cate-down .cate-panel .cate-part-col1 .cate-content dl dd {
-        width: 598px; } }
+        width: 598px;
+        max-width: 598px; } }
 
 .header {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); }
@@ -493,7 +494,8 @@
         color: #222;
         font-weight: bold;
         position: absolute;
-        line-height: 22px; }
+        line-height: 22px;
+        overflow: hidden; }
         .cate-panel .cate-part-col1 .cate-content dl dt::after {
           content: '\e653';
           font-family: iconfont;
@@ -503,10 +505,13 @@
         margin-left: 95px;
         display: inline-block;
         word-break: keep-all;
-        width: 425px; }
+        width: 425px;
+        max-width: 425px;
+        overflow: hidden; }
         .cate-panel .cate-part-col1 .cate-content dl dd a {
           margin-right: 10px;
-          line-height: 22px; }
+          line-height: 22px;
+          word-break: keep-all; }
   .cate-panel .cate-part-col2 {
     float: right;
     width: 213px;

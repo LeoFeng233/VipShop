@@ -14,6 +14,8 @@ export default class KindNavClick {
         this.goodsNav = document.querySelector(".goods-nav");
         this.goodsNavHeight = this.goodsNav.clientHeight + this.goodsNav.clientTop;
         this.scrollTopList = this.getAllElScrollTop(this.goodsElList);
+
+        this.lastSelectedButton = null;
         this.bindEvent();
     }
 
@@ -24,7 +26,6 @@ export default class KindNavClick {
             event.preventDefault();
 
             let clickNavIndex = 0
-            console.log(event.target);
             for (let i = 0; i < this.navLinkList.length; i++) {
                 if (this.navLinkList[i] === event.target) {
                     clickNavIndex = i;
@@ -32,11 +33,40 @@ export default class KindNavClick {
                 }
             }
 
-            console.log(this.scrollTopList[clickNavIndex]);
             document.documentElement.scrollTop = this.scrollTopList[clickNavIndex];
-        })
+            this.selectNavButton(clickNavIndex);
+        });
+
+
+        window.addEventListener("scroll", () => {
+            let selectedIndex = -1;
+            this.scrollTopList.forEach((element, index, arr) => {
+                let scrollTop = document.documentElement.scrollTop;
+
+                if (scrollTop > element && (index === (arr.length - 1) || scrollTop < arr[index + 1])) {
+                    selectedIndex = index;
+                    return;
+                }
+            });
+            if (selectedIndex >= 0) {
+                this.selectNavButton(selectedIndex);
+            }
+
+        });
+
+
     }
 
+    selectNavButton(index) {
+
+        if (this.lastSelectedButton) {
+            this.lastSelectedButton.classList.remove("selected");
+        }
+
+        this.lastSelectedButton = this.navLinkList[index];
+        this.navLinkList[index].classList.add("selected");
+
+    }
     getAllElScrollTop(domList) {
         let result = [];
 

@@ -692,10 +692,12 @@
     left: 156px;
     top: 0;
     box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, .1);
+    overflow: hidden;
 
     .cate-part {
         width: 100%;
         height: 100%;
+        overflow: hidden;
     }
 
     .cate-part-col1 {
@@ -704,8 +706,11 @@
         width: 519px;
         padding: 16px 40px 16px 40px;
         height: 462px;
+        overflow: hidden;
 
         .cate-content {
+            overflow: hidden;
+
             dl {
                 position: relative;
                 margin-bottom: 24px;
@@ -739,6 +744,7 @@
                         margin-right: 10px;
                         line-height: 22px;
                         word-break: keep-all;
+                        vertical-align: top;
                     }
                 }
             }

@@ -405,13 +405,18 @@
   left: 50%;
   margin-left: -612px;
   background-color: #fff; }
+  .kind-nav-box .kind-nav {
+    margin-bottom: 5px; }
   .kind-nav-box .kind-nav-item {
     display: block;
     padding: 8px 5px;
     height: 20px;
     line-height: 20px;
     border-bottom: 1px solid #eaeaea;
-    color: #666; }
+    color: #666;
+    word-break: keep-all; }
+    .kind-nav-box .kind-nav-item:last-child {
+      border-bottom: none; }
     .kind-nav-box .kind-nav-item .kind-nav-icon {
       font-family: iconfont;
       font-size: 18px;

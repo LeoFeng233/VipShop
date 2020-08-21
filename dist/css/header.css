@@ -475,43 +475,49 @@
   position: absolute;
   left: 156px;
   top: 0;
-  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.1); }
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden; }
   .cate-panel .cate-part {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    overflow: hidden; }
   .cate-panel .cate-part-col1 {
     border-top: 1px solid #f5f5f5;
     float: left;
     width: 519px;
     padding: 16px 40px 16px 40px;
-    height: 462px; }
-    .cate-panel .cate-part-col1 .cate-content dl {
-      position: relative;
-      margin-bottom: 24px; }
-      .cate-panel .cate-part-col1 .cate-content dl dt {
-        width: 83px;
-        display: inline-block;
-        color: #222;
-        font-weight: bold;
-        position: absolute;
-        line-height: 22px;
-        overflow: hidden; }
-        .cate-panel .cate-part-col1 .cate-content dl dt::after {
-          content: '\e653';
-          font-family: iconfont;
+    height: 462px;
+    overflow: hidden; }
+    .cate-panel .cate-part-col1 .cate-content {
+      overflow: hidden; }
+      .cate-panel .cate-part-col1 .cate-content dl {
+        position: relative;
+        margin-bottom: 24px; }
+        .cate-panel .cate-part-col1 .cate-content dl dt {
+          width: 83px;
+          display: inline-block;
+          color: #222;
+          font-weight: bold;
           position: absolute;
-          right: 0; }
-      .cate-panel .cate-part-col1 .cate-content dl dd {
-        margin-left: 95px;
-        display: inline-block;
-        word-break: keep-all;
-        width: 425px;
-        max-width: 425px;
-        overflow: hidden; }
-        .cate-panel .cate-part-col1 .cate-content dl dd a {
-          margin-right: 10px;
           line-height: 22px;
-          word-break: keep-all; }
+          overflow: hidden; }
+          .cate-panel .cate-part-col1 .cate-content dl dt::after {
+            content: '\e653';
+            font-family: iconfont;
+            position: absolute;
+            right: 0; }
+        .cate-panel .cate-part-col1 .cate-content dl dd {
+          margin-left: 95px;
+          display: inline-block;
+          word-break: keep-all;
+          width: 425px;
+          max-width: 425px;
+          overflow: hidden; }
+          .cate-panel .cate-part-col1 .cate-content dl dd a {
+            margin-right: 10px;
+            line-height: 22px;
+            word-break: keep-all;
+            vertical-align: top; }
   .cate-panel .cate-part-col2 {
     float: right;
     width: 213px;

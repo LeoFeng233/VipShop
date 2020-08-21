@@ -647,6 +647,10 @@
     margin-left: -612px;
     background-color: #fff;
 
+    .kind-nav {
+        margin-bottom: 5px;
+    }
+
     .kind-nav-item {
         display: block;
         padding: 8px 5px;
@@ -654,6 +658,11 @@
         line-height: 20px;
         border-bottom: 1px solid #eaeaea;
         color: #666;
+        word-break: keep-all;
+
+        &:last-child {
+            border-bottom: none;
+        }
 
         .kind-nav-icon {
             font-family: iconfont;

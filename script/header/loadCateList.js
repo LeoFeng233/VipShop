@@ -43,7 +43,7 @@ export class LoadCateList {
             let tempDom = '';
             const list = obj[key];
             list.forEach(element => {
-                tempDom += `<a href="../../pages/goods_llist.html">${element}</a>`;
+                tempDom += `<a href="../../pages/goods_llist.html">${element}</a> `;
             });
 
             newDom += `<dl>
